@@ -1,3 +1,5 @@
 # Solygambas
 
-Codebase for [solygambas.github.io](https://solygambas.github.io/)
+Source code for my portfolio.
+
+[Check solygambas.github.io](https://solygambas.github.io/)
