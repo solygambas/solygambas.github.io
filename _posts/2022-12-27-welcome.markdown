@@ -7,8 +7,8 @@ categories: blog
 
 Hi!
 
-Here are some projects you can learn from:
+If you are starting your journey as a web developer, here are some projects you can learn from:
 
 - [100+ mini web projects using HTML, CSS and JavaScript](https://github.com/solygambas/html-css-javascript-projects)
 
-You can also contact me on [Twitter](https://www.twitter.com/solygambas)
+Feel free to contact me on [Twitter](https://www.twitter.com/solygambas)
