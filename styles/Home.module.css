@@ -29,8 +29,16 @@
 
 .hero h2 {
   font-size: 2.5rem;
+  color: var(--foreground-alternate-color);
 }
 
 .hero p {
   font-size: 2rem;
+}
+
+.hero ul {
+  list-style: none;
+  display: flex;
+  margin-top: 1.5rem;
+  gap: 1.5rem;
 }

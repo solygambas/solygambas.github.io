@@ -32,6 +32,83 @@ export default function Home() {
               <h2 className={kanitMedium.className}>
                 I’ve been building websites for almost 25 years
               </h2>
+              <ul>
+                <li>
+                  <a
+                    title="Check my LinkedIn profile"
+                    href="https://bit.ly/solygambas"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image
+                      src="icons/linkedin.svg"
+                      alt="LinkedIn logo"
+                      width={40}
+                      height={40}
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    title="Check my Twitter profile"
+                    href="https://twitter.com/solygambas"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image
+                      src="icons/twitter.svg"
+                      alt="Twitter logo"
+                      width={40}
+                      height={40}
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    title="Check my GitHub profile"
+                    href="https://github.com/solygambas"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image
+                      src="icons/github.svg"
+                      alt="GitHub logo"
+                      width={40}
+                      height={40}
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    title="Check my CodePen profile"
+                    href="https://codepen.io/solygambas"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image
+                      src="icons/codepen.svg"
+                      alt="CodePen logo"
+                      width={40}
+                      height={40}
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    title="Check my Dribbble profile"
+                    href="https://dribbble.com/solygambas"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image
+                      src="icons/dribbble.svg"
+                      alt="Dribbble logo"
+                      width={40}
+                      height={40}
+                    />
+                  </a>
+                </li>
+              </ul>
             </div>
             <Image
               src="/hero.png"
