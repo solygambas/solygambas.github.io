@@ -42,3 +42,13 @@
   margin-top: 1.5rem;
   gap: 1.5rem;
 }
+
+.image {
+  min-width: 644px;
+  height: 644px;
+  position: relative;
+}
+
+.image img {
+  object-fit: fill;
+}

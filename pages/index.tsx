@@ -110,12 +110,13 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <Image
-              src="/hero.png"
-              alt="Man with dark hair and green eyes smiling"
-              width={644}
-              height={644}
-            />
+            <div className={styles.image}>
+              <Image
+                src="/hero.png"
+                alt="Man with dark hair and green eyes smiling"
+                fill
+              />
+            </div>
           </section>
         </main>
       </div>
