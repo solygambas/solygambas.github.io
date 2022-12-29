@@ -1,8 +1,11 @@
 import Head from "next/head";
-import { Inter } from "@next/font/google";
+import { Kanit } from "@next/font/google";
 import styles from "../styles/Home.module.css";
+import Image from "next/image";
 
-const inter = Inter({ subsets: ["latin"] });
+const kanitLight = Kanit({ subsets: ["latin"], weight: "300" });
+const kanitMedium = Kanit({ subsets: ["latin"], weight: "500" });
+const kanitBold = Kanit({ subsets: ["latin"], weight: "700" });
 
 export default function Home() {
   return (
@@ -16,70 +19,29 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <div className={styles.description}>
-          <p>Solygambas</p>
-        </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
+      <div className={styles.content}>
+        <header>
+          <div className={styles.header}>
+            <h1 className={kanitBold.className}>Solygambas</h1>
+          </div>
+        </header>
+        <main className={styles.main}>
+          <section className={styles.hero}>
+            <div>
+              <p className={kanitLight.className}>Hi, I’m Joachim</p>
+              <h2 className={kanitMedium.className}>
+                I’ve been building websites for almost 25 years
+              </h2>
+            </div>
+            <Image
+              src="/hero.png"
+              alt="Man with dark hair and green eyes smiling"
+              width={644}
+              height={644}
+            />
+          </section>
+        </main>
+      </div>
     </>
   );
 }
