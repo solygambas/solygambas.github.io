@@ -53,6 +53,8 @@
 
 .heroImage img {
   object-fit: fill;
+  border: 5px solid var(--border-color);
+  border-radius: 90px;
 }
 
 @media (min-width: 768px) {

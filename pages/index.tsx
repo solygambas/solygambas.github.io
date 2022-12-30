@@ -112,7 +112,7 @@ export default function Home() {
             </div>
             <div className={styles.heroImage}>
               <Image
-                src="/hero.png"
+                src="/hero.jpg"
                 alt="Man with dark hair and green eyes smiling"
                 fill
               />
