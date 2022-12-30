@@ -27,7 +27,7 @@ export default function Home() {
         </header>
         <main className={styles.main}>
           <section className={styles.hero}>
-            <div>
+            <div className={styles.heroText}>
               <p className={kanitLight.className}>Hi, I’m Joachim</p>
               <h2 className={kanitMedium.className}>
                 I’ve been building websites for almost 25 years
@@ -110,7 +110,7 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <div className={styles.image}>
+            <div className={styles.heroImage}>
               <Image
                 src="/hero.png"
                 alt="Man with dark hair and green eyes smiling"

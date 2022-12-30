@@ -17,7 +17,7 @@
 }
 
 .main {
-  padding: 0 6rem;
+  padding: 0 2rem;
 }
 
 .hero {
@@ -45,17 +45,29 @@
   gap: 1.5rem;
 }
 
-.image {
+.heroImage {
   min-width: 300px;
   height: 300px;
   position: relative;
 }
 
-.image img {
+.heroImage img {
   object-fit: fill;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 768px) {
+  .hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 4rem;
+  }
+  .heroText {
+    width: 19rem;
+  }
+}
+
+@media (min-width: 992px) {
   .header {
     height: 5rem;
     justify-content: start;
@@ -64,11 +76,15 @@
   .header h1 {
     font-size: 2rem;
   }
+  .main {
+    padding: 0 4rem;
+  }
   .hero {
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    gap: 4rem;
+    gap: 1rem;
+  }
+  .heroText {
+    width: 31rem;
   }
   .hero h2 {
     font-size: 2.5rem;
@@ -76,7 +92,17 @@
   .hero p {
     font-size: 2rem;
   }
-  .image {
+  .heroImage {
+    min-width: 350px;
+    height: 350px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .main {
+    padding: 0 6rem;
+  }
+  .heroImage {
     min-width: 644px;
     height: 644px;
   }
