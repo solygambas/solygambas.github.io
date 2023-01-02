@@ -104,6 +104,9 @@
   .main {
     padding: 0 6rem;
   }
+  .hero {
+    justify-content: space-evenly;
+  }
   .heroImage {
     min-width: 644px;
     height: 644px;
