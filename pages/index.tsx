@@ -2,47 +2,48 @@ import Head from "next/head";
 import { Kanit } from "@next/font/google";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { GetStaticProps } from "next";
+import { useTranslation } from "next-i18next";
 
 const kanitLight = Kanit({ subsets: ["latin"], weight: "300" });
 const kanitMedium = Kanit({ subsets: ["latin"], weight: "500" });
 const kanitBold = Kanit({ subsets: ["latin"], weight: "700" });
 
 export default function Home() {
+  const { t } = useTranslation("common");
   return (
     <>
       <Head>
-        <title>Solygambas</title>
-        <meta
-          name="description"
-          content="Freelance Full-stack Web Developer: Node.js, React, React Native, JavaScript, WordPress, PHP, Python. Remote jobs only."
-        />
+        <title>{t("title")}</title>
+        <meta name="description" content={t("description") as string} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.content}>
         <header>
           <div className={styles.header}>
-            <h1 className={kanitBold.className}>Solygambas</h1>
+            <h1 className={kanitBold.className}>{t("title")}</h1>
           </div>
         </header>
         <main className={styles.main}>
           <section className={styles.hero}>
             <div className={styles.heroText}>
-              <p className={kanitLight.className}>Hi, I’m Joachim</p>
-              <h2 className={kanitMedium.className}>
-                I’ve been building websites for almost 25 years
-              </h2>
+              <p className={kanitLight.className}>{t("hero.name")}</p>
+              <h2 className={kanitMedium.className}>{t("hero.experience")}</h2>
               <ul>
                 <li>
                   <a
-                    title="Check my LinkedIn profile"
+                    title={
+                      t("hero.brand.social", { brand: "LinkedIn" }) as string
+                    }
                     href="https://bit.ly/solygambas"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <Image
                       src="icons/linkedin.svg"
-                      alt="LinkedIn logo"
+                      alt={t("hero.brand.alt", { brand: "LinkedIn" }) as string}
                       width={40}
                       height={40}
                     />
@@ -50,14 +51,16 @@ export default function Home() {
                 </li>
                 <li>
                   <a
-                    title="Check my Twitter profile"
+                    title={
+                      t("hero.brand.social", { brand: "Twitter" }) as string
+                    }
                     href="https://twitter.com/solygambas"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <Image
                       src="icons/twitter.svg"
-                      alt="Twitter logo"
+                      alt={t("hero.brand.alt", { brand: "Twitter" }) as string}
                       width={40}
                       height={40}
                     />
@@ -65,14 +68,16 @@ export default function Home() {
                 </li>
                 <li>
                   <a
-                    title="Check my GitHub profile"
+                    title={
+                      t("hero.brand.social", { brand: "GitHub" }) as string
+                    }
                     href="https://github.com/solygambas"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <Image
                       src="icons/github.svg"
-                      alt="GitHub logo"
+                      alt={t("hero.brand.alt", { brand: "GitHub" }) as string}
                       width={40}
                       height={40}
                     />
@@ -80,14 +85,16 @@ export default function Home() {
                 </li>
                 <li>
                   <a
-                    title="Check my CodePen profile"
+                    title={
+                      t("hero.brand.social", { brand: "CodePen" }) as string
+                    }
                     href="https://codepen.io/solygambas"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <Image
                       src="icons/codepen.svg"
-                      alt="CodePen logo"
+                      alt={t("hero.brand.alt", { brand: "CodePen" }) as string}
                       width={40}
                       height={40}
                     />
@@ -95,14 +102,16 @@ export default function Home() {
                 </li>
                 <li>
                   <a
-                    title="Check my Dribbble profile"
+                    title={
+                      t("hero.brand.social", { brand: "Dribbble" }) as string
+                    }
                     href="https://dribbble.com/solygambas"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <Image
                       src="icons/dribbble.svg"
-                      alt="Dribbble logo"
+                      alt={t("hero.brand.alt", { brand: "Dribbble" }) as string}
                       width={40}
                       height={40}
                     />
@@ -111,11 +120,7 @@ export default function Home() {
               </ul>
             </div>
             <div className={styles.heroImage}>
-              <Image
-                src="/hero.jpg"
-                alt="Man with dark hair and green eyes smiling"
-                fill
-              />
+              <Image src="/hero.jpg" alt={t("hero.alt") as string} fill />
             </div>
           </section>
         </main>
@@ -123,3 +128,11 @@ export default function Home() {
     </>
   );
 }
+
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale ?? "en", ["common"])),
+    },
+  };
+};
