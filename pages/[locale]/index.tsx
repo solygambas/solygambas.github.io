@@ -6,6 +6,9 @@ import { Footer } from "../../components/Footer";
 import { getStaticPaths, makeStaticProps } from "../../lib/getStatic";
 import { useTranslation } from "next-i18next";
 
+const getStaticProps = makeStaticProps(["common", "footer"]);
+export { getStaticPaths, getStaticProps };
+
 const kanitLight = Kanit({ subsets: ["latin"], weight: "300" });
 const kanitMedium = Kanit({ subsets: ["latin"], weight: "500" });
 const kanitBold = Kanit({ subsets: ["latin"], weight: "700" });
@@ -129,6 +132,3 @@ export default function Home() {
     </>
   );
 }
-
-const getStaticProps = makeStaticProps(["common", "footer"]);
-export { getStaticPaths, getStaticProps };

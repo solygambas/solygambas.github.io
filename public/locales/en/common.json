@@ -1,0 +1,13 @@
+{
+  "title": "Solygambas",
+  "description": "Freelance Full-stack Web Developer: Node.js, React, React Native, JavaScript, WordPress, PHP, Python. Remote jobs only.",
+  "hero": {
+    "name": "Hi, I’m Joachim",
+    "experience": "I’ve been building websites for almost 25 years",
+    "alt": "Man with dark hair and green eyes smiling",
+    "brand": {
+      "social": "Check my {{brand}} profile",
+      "alt": "{{brand}} logo"
+    }
+  }
+}
