@@ -1,9 +1,9 @@
 import Head from "next/head";
 import { Kanit } from "@next/font/google";
-import styles from "../styles/Home.module.css";
+import styles from "../..//styles/Home.module.css";
 import Image from "next/image";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { GetStaticProps } from "next";
+import { Footer } from "../../components/Footer";
+import { getStaticPaths, makeStaticProps } from "../../lib/getStatic";
 import { useTranslation } from "next-i18next";
 
 const kanitLight = Kanit({ subsets: ["latin"], weight: "300" });
@@ -124,15 +124,11 @@ export default function Home() {
             </div>
           </section>
         </main>
+        <Footer />
       </div>
     </>
   );
 }
 
-export const getStaticProps: GetStaticProps = async ({ locale }) => {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale ?? "en", ["common"])),
-    },
-  };
-};
+const getStaticProps = makeStaticProps(["common", "footer"]);
+export { getStaticPaths, getStaticProps };
