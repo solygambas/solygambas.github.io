@@ -7,7 +7,7 @@
     "alt": "Homme souriant avec les cheveux bruns et des yeux verts",
     "brand": {
       "social": "Découvrez mon profil {{brand}}",
-      "alt": "Logo {{brand}}"
+      "alt": "Logo de {{brand}}"
     }
   }
 }
