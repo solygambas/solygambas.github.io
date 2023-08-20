@@ -1,0 +1,13 @@
+{
+  "title": "Solygambas",
+  "description": "Remote Full-Stack-Entwickler: Node.js, React, React Native, JavaScript, WordPress, PHP, Python. Gemeinsam können wir Großes erreichen!",
+  "hero": {
+    "name": "Hallo, ich bin Joachim",
+    "experience": "Ich baue seit fast 25 Jahren Websites",
+    "alt": "Mann mit dunklen Haaren und grünen Augen lächelnd",
+    "brand": {
+      "social": "Besuche mein {{brand}}-Profil",
+      "alt": "{{brand}}-Logo"
+    }
+  }
+}
