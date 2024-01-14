@@ -1,6 +1,6 @@
 import Head from "next/head";
-import { Kanit } from "@next/font/google";
-import styles from "../..//styles/Home.module.css";
+import { Kanit } from "next/font/google";
+import styles from "../../styles/Home.module.css";
 import Image from "next/image";
 import { Footer } from "../../components/Footer";
 import { getStaticPaths, makeStaticProps } from "../../lib/getStatic";
@@ -54,16 +54,14 @@ export default function Home() {
                 </li>
                 <li>
                   <a
-                    title={
-                      t("hero.brand.social", { brand: "Twitter" }) as string
-                    }
+                    title={t("hero.brand.social", { brand: "X" }) as string}
                     href="https://twitter.com/solygambas"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <Image
-                      src="icons/twitter.svg"
-                      alt={t("hero.brand.alt", { brand: "Twitter" }) as string}
+                      src="icons/x.svg"
+                      alt={t("hero.brand.alt", { brand: "X" }) as string}
                       width={40}
                       height={40}
                     />
@@ -115,6 +113,29 @@ export default function Home() {
                     <Image
                       src="icons/dribbble.svg"
                       alt={t("hero.brand.alt", { brand: "Dribbble" }) as string}
+                      width={40}
+                      height={40}
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    title={
+                      t("hero.brand.social", {
+                        brand: "Google Cloud Skills",
+                      }) as string
+                    }
+                    href="https://bit.ly/googlecloudskills-solygambas"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image
+                      src="icons/google-cloud.svg"
+                      alt={
+                        t("hero.brand.alt", {
+                          brand: "Google Cloud Skills",
+                        }) as string
+                      }
                       width={40}
                       height={40}
                     />
