@@ -9,9 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/third-parties": "^14.1.3",
+    "next": "14.1.2",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.1.2"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@types/css-modules": "^1.0.5",
