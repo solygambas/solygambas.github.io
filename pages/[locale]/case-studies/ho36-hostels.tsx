@@ -20,7 +20,7 @@ function HoThirtySixHostels() {
       />
       <h3 className={kanitBold.className}>{title}</h3>
       <p className={kanitLight.className}>
-        Over the past decade, I've specialized in WordPress projects, often
+        Over the past decade, I&apos;ve specialized in WordPress projects, often
         collaborating with first-time clients to align their goals with their
         budget constraints.
       </p>
