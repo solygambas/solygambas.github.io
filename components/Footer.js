@@ -10,7 +10,7 @@ export const Footer = () => {
 
   return (
     <footer>
-      <p style={{ textAlign: "center" }}>
+      <p style={{ textAlign: "center", margin: "2rem 0" }}>
         <span>{t("change-locale")}</span>{" "}
         {i18nextConfig.i18n.locales.map((locale) => {
           if (locale === currentLocale) return null;

@@ -67,6 +67,11 @@
   .heroText {
     width: 19rem;
   }
+  .caseStudiesGrid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    gap: 1rem;
+  }
 }
 
 @media (min-width: 992px) {
@@ -97,6 +102,9 @@
   .heroImage {
     min-width: 350px;
     height: 350px;
+  }
+  .caseStudiesGrid {
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
   }
 }
 

@@ -147,70 +147,68 @@ export default function Home() {
               </ul>
             </div>
             <div className={styles.heroImage}>
-              <Image src="/hero.jpg" alt={t("hero.alt") as string} fill />
+              <Image
+                src="/hero.jpg"
+                alt={t("hero.alt") as string}
+                fill
+                priority
+              />
             </div>
           </section>
 
-          {/* Portfolio section */}
-          <section className={styles.portfolio}>
+          <section className={styles.caseStudies}>
             <h2 className={kanitBold.className}>Case Studies</h2>
-            {/* Add portfolio items */}
-            <div className={styles.portfolioItem}>
-              <Link href={`${currentLanguage}/case-studies/adevinta`}>
-                <h3 className={kanitMedium.className}>Adevinta</h3>
-                <p className={kanitLight.className}>
-                  Scaling Design Systems Across Europe
-                </p>
-                <Image
-                  src="/case-studies/adevinta.png"
-                  alt="Adevinta"
-                  width={300}
-                  height={200}
-                />
-              </Link>
-            </div>
-            <div className={styles.portfolioItem}>
-              <Link
-                href={`${currentLanguage}/case-studies/credit-agricole-group-infrastructure-platform`}
-              >
-                <h3 className={kanitMedium.className}>
-                  Crédit Agricole Group Infrastructure Platform
-                </h3>
-                <p className={kanitLight.className}>Driving Cloud Innovation</p>
-                <Image
-                  src="/case-studies/credit-agricole-group-infrastructure-platform.png"
-                  alt="Crédit Agricole Group Infrastructure Platform"
-                  width={300}
-                  height={200}
-                />
-              </Link>
-            </div>
-            <div className={styles.portfolioItem}>
-              <Link href={`${currentLanguage}/case-studies/ho36-hostels`}>
-                <h3 className={kanitMedium.className}>HO36 Hostels</h3>
-                <p className={kanitLight.className}>
-                  Enhancing User Experience and Booking Integration
-                </p>
-                <Image
-                  src="/case-studies/ho36-hostels.png"
-                  alt="HO36 Hostels"
-                  width={300}
-                  height={200}
-                />
-              </Link>
+            <div className={styles.caseStudiesGrid}>
+              <div className={styles.caseStudiesItem}>
+                <Link href={`${currentLanguage}/case-studies/adevinta`}>
+                  <Image
+                    src="/case-studies/adevinta.png"
+                    alt="Adevinta"
+                    width={300}
+                    height={200}
+                  />
+                  <h3 className={kanitMedium.className}>Adevinta</h3>
+                  <p className={kanitLight.className}>
+                    Scaling Design Systems Across Europe
+                  </p>
+                </Link>
+              </div>
+              <div className={styles.caseStudiesItem}>
+                <Link
+                  href={`${currentLanguage}/case-studies/credit-agricole-group-infrastructure-platform`}
+                >
+                  <Image
+                    src="/case-studies/credit-agricole-group-infrastructure-platform.png"
+                    alt="Crédit Agricole Group Infrastructure Platform"
+                    width={300}
+                    height={200}
+                  />
+                  <h3 className={kanitMedium.className}>
+                    Crédit Agricole Group Infrastructure Platform
+                  </h3>
+                  <p className={kanitLight.className}>
+                    Driving Cloud Innovation
+                  </p>
+                </Link>
+              </div>
+              <div className={styles.caseStudiesItem}>
+                <Link href={`${currentLanguage}/case-studies/ho36-hostels`}>
+                  <Image
+                    src="/case-studies/ho36-hostels.png"
+                    alt="HO36 Hostels"
+                    width={300}
+                    height={200}
+                  />
+                  <h3 className={kanitMedium.className}>HO36 Hostels</h3>
+                  <p className={kanitLight.className}>
+                    Enhancing User Experience and Booking Integration
+                  </p>
+                </Link>
+              </div>
             </div>
           </section>
 
-          {/* Skills section */}
-          {/* <section className={styles.skills}>
-            <h2 className={kanitMedium.className}>Projects</h2>
-            <ul className={styles.skillList}>
-              <li>Node.js</li>
-              <li>React</li>
-              <li>React Native</li>
-              {/* Add more skills 
-            </ul>
-          </section> */}
+          {/* Project section */}
 
           {/* Contact section */}
         </main>
