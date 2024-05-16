@@ -1,0 +1,7 @@
+.caseStudy {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 1rem;
+  max-width: 1200px;
+}

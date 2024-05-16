@@ -1,12 +1,14 @@
 import Head from "next/head";
 import Image from "next/image";
 import { kanitBold, kanitLight } from "..";
+import BackButton from "../../../components/BackButton";
+import styles from "../../../styles/CaseStudy.module.css";
 
 function HoThirtySixHostels() {
   const title =
     "HO36 Hostels: Enhancing User Experience and Booking Integration";
   return (
-    <div>
+    <div className={styles.caseStudy}>
       <Head>
         <title>{title}</title>
       </Head>
@@ -42,6 +44,7 @@ function HoThirtySixHostels() {
         their business objectives and successfully implemented solutions within
         tight deadlines.
       </p>
+      <BackButton />
     </div>
   );
 }

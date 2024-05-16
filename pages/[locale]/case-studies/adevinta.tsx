@@ -1,11 +1,13 @@
 import Head from "next/head";
 import Image from "next/image";
 import { kanitBold, kanitLight } from "..";
+import BackButton from "../../../components/BackButton";
+import styles from "../../../styles/CaseStudy.module.css";
 
 function Adevinta() {
   const title = "Adevinta: Scaling Design Systems Across Europe";
   return (
-    <div>
+    <div className={styles.caseStudy}>
       <Head>
         <title>{title}</title>
       </Head>
@@ -47,6 +49,7 @@ function Adevinta() {
         enjoyed empowering designers and developers to leverage our components
         for faster interface development.
       </p>
+      <BackButton />
     </div>
   );
 }

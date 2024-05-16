@@ -1,12 +1,14 @@
 import Head from "next/head";
 import Image from "next/image";
 import { kanitBold, kanitLight } from "..";
+import BackButton from "../../../components/BackButton";
+import styles from "../../../styles/CaseStudy.module.css";
 
 function Cagip() {
   const title =
     "Crédit Agricole Group Infrastructure Platform: Driving Cloud Innovation";
   return (
-    <div>
+    <div className={styles.caseStudy}>
       <Head>
         <title>{title}</title>
       </Head>
@@ -50,6 +52,7 @@ function Cagip() {
         enthusiasm and inquisitiveness not only enhanced their skills but also
         enriched my own learning experience.
       </p>
+      <BackButton />
     </div>
   );
 }

@@ -1,0 +1,12 @@
+.button {
+  background-color: var(--background-alternate-color);
+  border: none;
+  color: var(--foreground-color);
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2rem 0;
+  cursor: pointer;
+}
