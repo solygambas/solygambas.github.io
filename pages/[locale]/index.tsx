@@ -5,16 +5,19 @@ import Image from "next/image";
 import { Footer } from "../../components/Footer";
 import { getStaticPaths, makeStaticProps } from "../../lib/getStatic";
 import { useTranslation } from "next-i18next";
+import Link from "next/link";
 
 const getStaticProps = makeStaticProps(["common", "footer"]);
 export { getStaticPaths, getStaticProps };
 
-const kanitLight = Kanit({ subsets: ["latin"], weight: "300" });
-const kanitMedium = Kanit({ subsets: ["latin"], weight: "500" });
-const kanitBold = Kanit({ subsets: ["latin"], weight: "700" });
+export const kanitLight = Kanit({ subsets: ["latin"], weight: "300" });
+export const kanitMedium = Kanit({ subsets: ["latin"], weight: "500" });
+export const kanitBold = Kanit({ subsets: ["latin"], weight: "700" });
 
 export default function Home() {
   const { t } = useTranslation("common");
+  const { i18n } = useTranslation();
+  const currentLanguage = i18n.language;
   return (
     <>
       <Head>
@@ -34,7 +37,7 @@ export default function Home() {
             <div className={styles.heroText}>
               <p className={kanitLight.className}>{t("hero.name")}</p>
               <h2 className={kanitMedium.className}>{t("hero.experience")}</h2>
-              <ul>
+              <ul className={styles.socialLinks}>
                 <li>
                   <a
                     title={
@@ -147,6 +150,69 @@ export default function Home() {
               <Image src="/hero.jpg" alt={t("hero.alt") as string} fill />
             </div>
           </section>
+
+          {/* Portfolio section */}
+          <section className={styles.portfolio}>
+            <h2 className={kanitBold.className}>Case Studies</h2>
+            {/* Add portfolio items */}
+            <div className={styles.portfolioItem}>
+              <Link href={`${currentLanguage}/case-studies/adevinta`}>
+                <h3 className={kanitMedium.className}>Adevinta</h3>
+                <p className={kanitLight.className}>
+                  Scaling Design Systems Across Europe
+                </p>
+                <Image
+                  src="/case-studies/adevinta.png"
+                  alt="Adevinta"
+                  width={300}
+                  height={200}
+                />
+              </Link>
+            </div>
+            <div className={styles.portfolioItem}>
+              <Link
+                href={`${currentLanguage}/case-studies/credit-agricole-group-infrastructure-platform`}
+              >
+                <h3 className={kanitMedium.className}>
+                  Crédit Agricole Group Infrastructure Platform
+                </h3>
+                <p className={kanitLight.className}>Driving Cloud Innovation</p>
+                <Image
+                  src="/case-studies/credit-agricole-group-infrastructure-platform.png"
+                  alt="Crédit Agricole Group Infrastructure Platform"
+                  width={300}
+                  height={200}
+                />
+              </Link>
+            </div>
+            <div className={styles.portfolioItem}>
+              <Link href={`${currentLanguage}/case-studies/ho36-hostels`}>
+                <h3 className={kanitMedium.className}>HO36 Hostels</h3>
+                <p className={kanitLight.className}>
+                  Enhancing User Experience and Booking Integration
+                </p>
+                <Image
+                  src="/case-studies/ho36-hostels.png"
+                  alt="HO36 Hostels"
+                  width={300}
+                  height={200}
+                />
+              </Link>
+            </div>
+          </section>
+
+          {/* Skills section */}
+          {/* <section className={styles.skills}>
+            <h2 className={kanitMedium.className}>Projects</h2>
+            <ul className={styles.skillList}>
+              <li>Node.js</li>
+              <li>React</li>
+              <li>React Native</li>
+              {/* Add more skills 
+            </ul>
+          </section> */}
+
+          {/* Contact section */}
         </main>
         <Footer />
       </div>
