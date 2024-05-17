@@ -2,7 +2,18 @@ import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-const LinkComponent = ({ children, skipLocaleHandling, ...rest }) => {
+type LinkComponentProps = {
+  children: React.ReactNode;
+  skipLocaleHandling?: boolean;
+  href?: string;
+  locale?: string;
+};
+
+const LinkComponent = ({
+  children,
+  skipLocaleHandling,
+  ...rest
+}: LinkComponentProps) => {
   const router = useRouter();
   const locale = rest.locale || router.query.locale || "";
 
@@ -11,7 +22,7 @@ const LinkComponent = ({ children, skipLocaleHandling, ...rest }) => {
   if (locale && !skipLocaleHandling) {
     href = href
       ? `/${locale}${href}`
-      : router.pathname.replace("[locale]", locale);
+      : router.pathname.replace("[locale]", locale as string);
   }
 
   return (
