@@ -40,7 +40,9 @@
 
 .hero ul {
   list-style: none;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+  justify-items: center;
   margin-top: 1.5rem;
   gap: 1.5rem;
 }
@@ -57,6 +59,14 @@
   border-radius: 90px;
 }
 
+.caseStudies {
+  margin: 4rem 0;
+}
+
+.caseStudies h2 {
+  text-align: center;
+}
+
 @media (min-width: 768px) {
   .hero {
     display: flex;
@@ -66,6 +76,12 @@
   }
   .heroText {
     width: 19rem;
+  }
+  .hero ul {
+    display: flex;
+  }
+  .caseStudies h2 {
+    text-align: left;
   }
   .caseStudiesGrid {
     display: grid;
