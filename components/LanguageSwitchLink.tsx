@@ -4,8 +4,7 @@ import Link from "next/link";
 
 type LanguageSwitchLinkProps = {
   locale: string;
-  href: string;
-  children: React.ReactNode;
+  href?: string;
 };
 
 const LanguageSwitchLink = ({ locale, ...rest }: LanguageSwitchLinkProps) => {
