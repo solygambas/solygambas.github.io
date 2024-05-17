@@ -7,10 +7,10 @@ type LanguageSwitchLinkProps = {
   href?: string;
 };
 
-const LanguageSwitchLink = ({ locale, ...rest }: LanguageSwitchLinkProps) => {
+const LanguageSwitchLink = ({ locale, href }: LanguageSwitchLinkProps) => {
   const router = useRouter();
 
-  let href = rest.href || router.asPath;
+  let link = href || router.asPath;
   let pName = router.pathname;
   Object.keys(router.query).forEach((k) => {
     if (k === "locale") {
@@ -20,12 +20,12 @@ const LanguageSwitchLink = ({ locale, ...rest }: LanguageSwitchLinkProps) => {
     pName = pName.replace(`[${k}]`, router.query[k] as string);
   });
   if (locale) {
-    href = rest.href ? `/${locale}${rest.href}` : pName;
+    link = href ? `/${locale}${href}` : pName;
   }
 
   return (
     <Link
-      href={href}
+      href={link}
       onClick={() => languageDetector.cache && languageDetector.cache(locale)}
     >
       <button
