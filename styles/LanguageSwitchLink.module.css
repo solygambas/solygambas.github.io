@@ -1,0 +1,8 @@
+.button {
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  background-color: var(--background-alternate-color);
+  color: var(--foreground-color);
+  border: none;
+  font-family: inherit;
+}

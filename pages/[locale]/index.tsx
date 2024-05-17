@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { Kanit } from "next/font/google";
 import styles from "../../styles/Home.module.css";
 import Image from "next/image";
 import { Footer } from "../../components/Footer";
@@ -9,10 +8,6 @@ import Link from "next/link";
 
 const getStaticProps = makeStaticProps(["common", "footer"]);
 export { getStaticPaths, getStaticProps };
-
-export const kanitLight = Kanit({ subsets: ["latin"], weight: "300" });
-export const kanitMedium = Kanit({ subsets: ["latin"], weight: "500" });
-export const kanitBold = Kanit({ subsets: ["latin"], weight: "700" });
 
 export default function Home() {
   const { t } = useTranslation("common");
@@ -29,14 +24,14 @@ export default function Home() {
       <div className={styles.content}>
         <header>
           <div className={styles.header}>
-            <h1 className={kanitBold.className}>{t("title")}</h1>
+            <h1>{t("title")}</h1>
           </div>
         </header>
-        <main className={styles.main}>
+        <div className={styles.main}>
           <section className={styles.hero}>
             <div className={styles.heroText}>
-              <p className={kanitLight.className}>{t("hero.name")}</p>
-              <h2 className={kanitMedium.className}>{t("hero.experience")}</h2>
+              <p>{t("hero.name")}</p>
+              <h2>{t("hero.experience")}</h2>
               <ul className={styles.socialLinks}>
                 <li>
                   <a
@@ -157,7 +152,7 @@ export default function Home() {
           </section>
 
           <section className={styles.caseStudies}>
-            <h2 className={kanitBold.className}>Case Studies</h2>
+            <h2>Case Studies</h2>
             <div className={styles.caseStudiesGrid}>
               <div className={styles.caseStudiesItem}>
                 <Link href={`${currentLanguage}/case-studies/adevinta`}>
@@ -167,10 +162,8 @@ export default function Home() {
                     width={300}
                     height={200}
                   />
-                  <h3 className={kanitMedium.className}>Adevinta</h3>
-                  <p className={kanitLight.className}>
-                    Scaling Design Systems Across Europe
-                  </p>
+                  <h3>Adevinta</h3>
+                  <p>Scaling Design Systems Across Europe</p>
                 </Link>
               </div>
               <div className={styles.caseStudiesItem}>
@@ -183,12 +176,8 @@ export default function Home() {
                     width={300}
                     height={200}
                   />
-                  <h3 className={kanitMedium.className}>
-                    Crédit Agricole Group Infrastructure Platform
-                  </h3>
-                  <p className={kanitLight.className}>
-                    Driving Cloud Innovation
-                  </p>
+                  <h3>Crédit Agricole Group Infrastructure Platform</h3>
+                  <p>Driving Cloud Innovation</p>
                 </Link>
               </div>
               <div className={styles.caseStudiesItem}>
@@ -199,10 +188,8 @@ export default function Home() {
                     width={300}
                     height={200}
                   />
-                  <h3 className={kanitMedium.className}>HO36 Hostels</h3>
-                  <p className={kanitLight.className}>
-                    Enhancing User Experience and Booking Integration
-                  </p>
+                  <h3>HO36 Hostels</h3>
+                  <p>Enhancing User Experience and Booking Integration</p>
                 </Link>
               </div>
             </div>
@@ -211,7 +198,7 @@ export default function Home() {
           {/* Project section */}
 
           {/* Contact section */}
-        </main>
+        </div>
         <Footer />
       </div>
     </>

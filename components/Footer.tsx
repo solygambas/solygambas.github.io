@@ -2,6 +2,7 @@ import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 import LanguageSwitchLink from "./LanguageSwitchLink";
 import i18nextConfig from "../next-i18next.config";
+import styles from "../styles/Footer.module.css";
 
 export const Footer = () => {
   const router = useRouter();
@@ -10,7 +11,7 @@ export const Footer = () => {
 
   return (
     <footer>
-      <p style={{ textAlign: "center", margin: "2rem 0" }}>
+      <p className={styles.footer}>
         <span>{t("change-locale")}</span>{" "}
         {i18nextConfig.i18n.locales.map((locale) => {
           if (locale === currentLocale) return null;

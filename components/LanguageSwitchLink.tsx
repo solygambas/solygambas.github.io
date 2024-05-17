@@ -1,6 +1,7 @@
 import languageDetector from "../lib/languageDetector";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import styles from "../styles/LanguageSwitchLink.module.css";
 
 type LanguageSwitchLinkProps = {
   locale: string;
@@ -28,17 +29,7 @@ const LanguageSwitchLink = ({ locale, href }: LanguageSwitchLinkProps) => {
       href={link}
       onClick={() => languageDetector.cache && languageDetector.cache(locale)}
     >
-      <button
-        style={{
-          cursor: "pointer",
-          padding: "0.25rem 0.5rem",
-          backgroundColor: "var(--background-alternate-color)",
-          color: "var(--foreground-color)",
-          border: "none",
-        }}
-      >
-        {locale.toUpperCase()}
-      </button>
+      <button className={styles.button}>{locale.toUpperCase()}</button>
     </Link>
   );
 };
