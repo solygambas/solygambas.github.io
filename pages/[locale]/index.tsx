@@ -151,10 +151,10 @@ export default function Home() {
             </div>
           </section>
 
-          <section className={styles.caseStudies}>
+          <section className={styles.portfolioContainer}>
             <h2>Case Studies</h2>
-            <div className={styles.caseStudiesGrid}>
-              <div className={styles.caseStudiesItem}>
+            <div className={styles.portfolioContainerGrid}>
+              <div className={styles.portfolioContainerItem}>
                 <Link href={`${currentLanguage}/case-studies/adevinta`}>
                   <Image
                     src="/case-studies/adevinta.png"
@@ -166,7 +166,7 @@ export default function Home() {
                   <p>Scaling Design Systems Across Europe</p>
                 </Link>
               </div>
-              <div className={styles.caseStudiesItem}>
+              <div className={styles.portfolioContainerItem}>
                 <Link
                   href={`${currentLanguage}/case-studies/credit-agricole-group-infrastructure-platform`}
                 >
@@ -180,7 +180,7 @@ export default function Home() {
                   <p>Driving Cloud Innovation</p>
                 </Link>
               </div>
-              <div className={styles.caseStudiesItem}>
+              <div className={styles.portfolioContainerItem}>
                 <Link href={`${currentLanguage}/case-studies/ho36-hostels`}>
                   <Image
                     src="/case-studies/ho36-hostels.png"
@@ -196,6 +196,49 @@ export default function Home() {
           </section>
 
           {/* Project section */}
+          <section className={styles.portfolioContainer}>
+            <h2>Featured Projects</h2>
+            <div className={styles.portfolioContainerGrid}>
+              <div className={styles.portfolioContainerItem}>
+                <Link
+                  href={`${currentLanguage}/featured-projects/on-business-plan`}
+                >
+                  <Image
+                    src="/featured-projects/on-business-plan.png"
+                    alt="On Business Plan"
+                    width={300}
+                    height={200}
+                  />
+                  <h3>On Business Plan</h3>
+                  <p>Empowering Digital Entrepreneurs</p>
+                </Link>
+              </div>
+              <div className={styles.portfolioContainerItem}>
+                <Link href={`${currentLanguage}/featured-projects/watchello`}>
+                  <Image
+                    src="/featured-projects/watchello.png"
+                    alt="Watchello"
+                    width={300}
+                    height={200}
+                  />
+                  <h3>Watchello</h3>
+                  <p>My Path from HTML to Machine Learning</p>
+                </Link>
+              </div>
+              <div className={styles.portfolioContainerItem}>
+                <Link href={`${currentLanguage}/featured-projects/projectin`}>
+                  <Image
+                    src="/featured-projects/projectin.png"
+                    alt="ProjectIn"
+                    width={300}
+                    height={200}
+                  />
+                  <h3>ProjectIn</h3>
+                  <p>Mastering Time Management for Freelancers</p>
+                </Link>
+              </div>
+            </div>
+          </section>
 
           {/* Contact section */}
         </div>
