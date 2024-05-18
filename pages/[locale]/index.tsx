@@ -53,7 +53,7 @@ export default function Home() {
                 <li>
                   <a
                     title={t("hero.brand.social", { brand: "X" }) as string}
-                    href="https://twitter.com/solygambas"
+                    href="https://x.com/solygambas"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
