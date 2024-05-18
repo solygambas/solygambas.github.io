@@ -1,4 +1,4 @@
-import CaseStudy from "../../../components/CaseStudy";
+import PortfolioItem from "../../../components/PortfolioItem";
 
 function HoThirtySixHostels() {
   const title =
@@ -11,7 +11,7 @@ function HoThirtySixHostels() {
   ];
 
   return (
-    <CaseStudy
+    <PortfolioItem
       title={title}
       paragraphs={paragraphs}
       src="/case-studies/ho36-hostels.png"

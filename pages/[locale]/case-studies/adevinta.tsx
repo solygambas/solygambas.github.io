@@ -1,4 +1,4 @@
-import CaseStudy from "../../../components/CaseStudy";
+import PortfolioItem from "../../../components/PortfolioItem";
 
 function Adevinta() {
   const title = "Adevinta: Scaling Design Systems Across Europe";
@@ -9,7 +9,7 @@ function Adevinta() {
     "Starting with just a designer and a small team, we made remarkable progress in two years, impacting our entire group. Collaborating in an international setting was both rewarding and challenging. I particularly enjoyed empowering designers and developers to leverage our components for faster interface development.",
   ];
   return (
-    <CaseStudy
+    <PortfolioItem
       title={title}
       paragraphs={paragraphs}
       src="/case-studies/adevinta.png"

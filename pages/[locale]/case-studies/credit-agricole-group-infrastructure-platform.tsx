@@ -1,4 +1,4 @@
-import CaseStudy from "../../../components/CaseStudy";
+import PortfolioItem from "../../../components/PortfolioItem";
 
 function Cagip() {
   const title =
@@ -10,7 +10,7 @@ function Cagip() {
     "Furthermore, as Crédit Agricole prioritizes its social impact, I had the privilege of mentoring two talented apprentices. Guiding them through the journey of becoming DevOps professionals was enlightening. Their enthusiasm and inquisitiveness not only enhanced their skills but also enriched my own learning experience.",
   ];
   return (
-    <CaseStudy
+    <PortfolioItem
       title={title}
       paragraphs={paragraphs}
       src="/case-studies/credit-agricole-group-infrastructure-platform.png"
