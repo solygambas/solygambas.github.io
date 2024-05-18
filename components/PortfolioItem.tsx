@@ -1,18 +1,25 @@
 import Head from "next/head";
 import Image from "next/image";
 import BackButton from "./BackButton";
-import styles from "../styles/CaseStudy.module.css";
+import styles from "../styles/PortfolioItem.module.css";
 
-type CaseStudyProps = {
+type PortfolioItemProps = {
   title: string;
   paragraphs: string[];
   src: string;
   alt: string;
+  url?: string;
 };
 
-function CaseStudy({ title, paragraphs, src, alt }: CaseStudyProps) {
+function PortfolioItem({
+  title,
+  paragraphs,
+  src,
+  alt,
+  url,
+}: PortfolioItemProps) {
   return (
-    <div className={styles.caseStudy}>
+    <div className={styles.portfolioItem}>
       <Head>
         <title>{title}</title>
       </Head>
@@ -21,8 +28,15 @@ function CaseStudy({ title, paragraphs, src, alt }: CaseStudyProps) {
       {paragraphs.map((paragraph, index) => (
         <p key={index}>{paragraph}</p>
       ))}
+      {url && (
+        <p>
+          <a href={url} target="_blank" rel="noopener noreferrer">
+            Visit {alt}
+          </a>
+        </p>
+      )}
       <BackButton />
     </div>
   );
 }
-export default CaseStudy;
+export default PortfolioItem;
