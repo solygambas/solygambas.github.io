@@ -3,7 +3,7 @@ import Image from "next/image";
 import BackButton from "./BackButton";
 import styles from "../styles/PortfolioItem.module.css";
 
-type PortfolioItemProps = {
+export type PortfolioItemProps = {
   title: string;
   paragraphs: string[];
   src: string;
