@@ -2,3 +2,16 @@
   text-align: center;
   margin: 2rem 0;
 }
+
+.footer span {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .footer span {
+    display: inline-block;
+    margin-right: 0.5rem;
+    margin-bottom: 0;
+  }
+}
