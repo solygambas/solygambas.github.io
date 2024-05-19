@@ -4,8 +4,8 @@ import Image from "next/image";
 import { Footer } from "../../components/Footer";
 import { getStaticPaths, makeStaticProps } from "../../lib/getStatic";
 import { useTranslation } from "next-i18next";
-import Link from "next/link";
 import SocialMediaIcon from "../../components/SocialMediaIcon";
+import PortfolioCard from "../../components/PortfolioCard";
 
 const getStaticProps = makeStaticProps(["common", "footer"]);
 export { getStaticPaths, getStaticProps };
@@ -87,44 +87,24 @@ export default function Home() {
           <section className={styles.portfolioContainer}>
             <h2>Case Studies</h2>
             <div className={styles.portfolioContainerGrid}>
-              <div className={styles.portfolioContainerItem}>
-                <Link href={`${currentLanguage}/case-studies/adevinta`}>
-                  <Image
-                    src="/case-studies/adevinta.png"
-                    alt="Adevinta"
-                    width={300}
-                    height={200}
-                  />
-                  <h3>Adevinta</h3>
-                  <p>Scaling Design Systems Across Europe</p>
-                </Link>
-              </div>
-              <div className={styles.portfolioContainerItem}>
-                <Link
-                  href={`${currentLanguage}/case-studies/credit-agricole-group-infrastructure-platform`}
-                >
-                  <Image
-                    src="/case-studies/credit-agricole-group-infrastructure-platform.png"
-                    alt="Crédit Agricole Group Infrastructure Platform"
-                    width={300}
-                    height={200}
-                  />
-                  <h3>Crédit Agricole Group Infrastructure Platform</h3>
-                  <p>Driving Cloud Innovation</p>
-                </Link>
-              </div>
-              <div className={styles.portfolioContainerItem}>
-                <Link href={`${currentLanguage}/case-studies/ho36-hostels`}>
-                  <Image
-                    src="/case-studies/ho36-hostels.png"
-                    alt="HO36 Hostels"
-                    width={300}
-                    height={200}
-                  />
-                  <h3>HO36 Hostels</h3>
-                  <p>Enhancing User Experience and Booking Integration</p>
-                </Link>
-              </div>
+              <PortfolioCard
+                title="Adevinta"
+                subtitle="Scaling Design Systems Across Europe"
+                link={`/${currentLanguage}/case-studies/adevinta`}
+                src="/case-studies/adevinta.png"
+              />
+              <PortfolioCard
+                title="Crédit Agricole Group Infrastructure Platform"
+                subtitle="Driving Cloud Innovation"
+                link={`/${currentLanguage}/case-studies/credit-agricole-group-infrastructure-platform`}
+                src="/case-studies/credit-agricole-group-infrastructure-platform.png"
+              />
+              <PortfolioCard
+                title="HO36 Hostels"
+                subtitle="Enhancing User Experience and Booking Integration"
+                link={`/${currentLanguage}/case-studies/ho36-hostels`}
+                src="/case-studies/ho36-hostels.png"
+              />
             </div>
           </section>
 
@@ -132,44 +112,24 @@ export default function Home() {
           <section className={styles.portfolioContainer}>
             <h2>Featured Projects</h2>
             <div className={styles.portfolioContainerGrid}>
-              <div className={styles.portfolioContainerItem}>
-                <Link
-                  href={`${currentLanguage}/featured-projects/on-business-plan`}
-                >
-                  <Image
-                    src="/featured-projects/on-business-plan.png"
-                    alt="On Business Plan"
-                    width={300}
-                    height={200}
-                  />
-                  <h3>On Business Plan</h3>
-                  <p>Empowering Digital Entrepreneurs</p>
-                </Link>
-              </div>
-              <div className={styles.portfolioContainerItem}>
-                <Link href={`${currentLanguage}/featured-projects/watchello`}>
-                  <Image
-                    src="/featured-projects/watchello.png"
-                    alt="Watchello"
-                    width={300}
-                    height={200}
-                  />
-                  <h3>Watchello</h3>
-                  <p>My Path from HTML to Machine Learning</p>
-                </Link>
-              </div>
-              <div className={styles.portfolioContainerItem}>
-                <Link href={`${currentLanguage}/featured-projects/projectin`}>
-                  <Image
-                    src="/featured-projects/projectin.png"
-                    alt="ProjectIn"
-                    width={300}
-                    height={200}
-                  />
-                  <h3>ProjectIn</h3>
-                  <p>Mastering Time Management for Freelancers</p>
-                </Link>
-              </div>
+              <PortfolioCard
+                title="On Business Plan"
+                subtitle="Empowering Digital Entrepreneurs"
+                link={`/${currentLanguage}/featured-projects/on-business-plan`}
+                src="/featured-projects/on-business-plan.png"
+              />
+              <PortfolioCard
+                title="Watchello"
+                subtitle="My Path from HTML to Machine Learning"
+                link={`/${currentLanguage}/featured-projects/watchello`}
+                src="/featured-projects/watchello.png"
+              />
+              <PortfolioCard
+                title="ProjectIn"
+                subtitle="Mastering Time Management for Freelancers"
+                link={`/${currentLanguage}/featured-projects/projectin`}
+                src="/featured-projects/projectin.png"
+              />
             </div>
           </section>
 
