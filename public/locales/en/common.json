@@ -57,5 +57,8 @@
       "title": "ProjectIn",
       "subtitle": "Mastering Time Management for Freelancers"
     }
+  },
+  "backButton": {
+    "text": "Back"
   }
 }
