@@ -36,7 +36,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const locale = params?.locale as string;
-  const caseStudy = params?.caseStudy as string;
+  const caseStudy = params?.caseStudy as CaseStudyKey;
 
   if (!caseStudy || !(caseStudy in caseStudyKeys)) {
     return { notFound: true };
@@ -52,11 +52,10 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   };
 };
 
-const CaseStudyPage = ({ caseStudy }: { caseStudy: string }) => {
+const CaseStudyPage = ({ caseStudy }: { caseStudy: CaseStudyKey }) => {
   const { t } = useTranslation("common");
-  const caseStudyKey = caseStudy as CaseStudyKey;
   const { title, subtitle, paragraphs } = t(
-    `caseStudies.${caseStudyKeys[caseStudyKey]}`,
+    `caseStudies.${caseStudyKeys[caseStudy]}`,
     {
       returnObjects: true,
     }
