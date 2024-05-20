@@ -33,7 +33,7 @@ function PortfolioItem({
       {url && (
         <p>
           <a href={url} target="_blank" rel="noopener noreferrer">
-            {t("visitButton.text")} {alt}
+            {t("visitButton.text", { website: alt })}
           </a>
         </p>
       )}

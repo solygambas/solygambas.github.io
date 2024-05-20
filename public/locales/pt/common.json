@@ -9,5 +9,11 @@
       "social": "Ver meu perfil no {{brand}}",
       "alt": "Logo do {{brand}}"
     }
+  },
+  "backButton": {
+    "text": "Voltar"
+  },
+  "visitButton": {
+    "text": "Visitar {{website}}"
   }
 }

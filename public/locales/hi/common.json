@@ -9,5 +9,11 @@
       "social": "मेरा {{brand}} प्रोफाइल चेक करें",
       "alt": "{{brand}} का लोगो"
     }
+  },
+  "backButton": {
+    "text": "वापस"
+  },
+  "visitButton": {
+    "text": "{{website}} पर जाएँ"
   }
 }

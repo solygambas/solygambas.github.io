@@ -86,6 +86,6 @@
     "text": "Back"
   },
   "visitButton": {
-    "text": "Visit"
+    "text": "Visit {{website}}"
   }
 }
