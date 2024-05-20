@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import { useTranslation } from "next-i18next";
 import BackButton from "./BackButton";
 import styles from "../styles/PortfolioItem.module.css";
 
@@ -18,6 +19,7 @@ function PortfolioItem({
   alt,
   url,
 }: PortfolioItemProps) {
+  const { t } = useTranslation("common");
   return (
     <div className={styles.portfolioItem}>
       <Head>
@@ -31,7 +33,7 @@ function PortfolioItem({
       {url && (
         <p>
           <a href={url} target="_blank" rel="noopener noreferrer">
-            Visit {alt}
+            {t("visitButton.text")} {alt}
           </a>
         </p>
       )}
