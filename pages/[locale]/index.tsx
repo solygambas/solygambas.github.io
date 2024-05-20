@@ -85,23 +85,27 @@ export default function Home() {
           </section>
 
           <section className={styles.portfolioContainer}>
-            <h2>Case Studies</h2>
+            <h2>{t("caseStudies.title")}</h2>
             <div className={styles.portfolioContainerGrid}>
               <PortfolioCard
-                title="Adevinta"
-                subtitle="Scaling Design Systems Across Europe"
+                title={t("caseStudies.adevinta.title")}
+                subtitle={t("caseStudies.adevinta.subtitle")}
                 link={`/${currentLanguage}/case-studies/adevinta`}
                 src="/case-studies/adevinta.png"
               />
               <PortfolioCard
-                title="Crédit Agricole Group Infrastructure Platform"
-                subtitle="Driving Cloud Innovation"
+                title={t(
+                  "caseStudies.credit-agricole-group-infrastructure-platform.title"
+                )}
+                subtitle={t(
+                  "caseStudies.credit-agricole-group-infrastructure-platform.subtitle"
+                )}
                 link={`/${currentLanguage}/case-studies/credit-agricole-group-infrastructure-platform`}
                 src="/case-studies/credit-agricole-group-infrastructure-platform.png"
               />
               <PortfolioCard
-                title="HO36 Hostels"
-                subtitle="Enhancing User Experience and Booking Integration"
+                title={t("caseStudies.ho36-hostels.title")}
+                subtitle={t("caseStudies.ho36-hostels.subtitle")}
                 link={`/${currentLanguage}/case-studies/ho36-hostels`}
                 src="/case-studies/ho36-hostels.png"
               />
@@ -110,23 +114,23 @@ export default function Home() {
 
           {/* Project section */}
           <section className={styles.portfolioContainer}>
-            <h2>Featured Projects</h2>
+            <h2>{t("featuredProjects.title")}</h2>
             <div className={styles.portfolioContainerGrid}>
               <PortfolioCard
-                title="On Business Plan"
-                subtitle="Empowering Digital Entrepreneurs"
+                title={t("featuredProjects.on-business-plan.title")}
+                subtitle={t("featuredProjects.on-business-plan.subtitle")}
                 link={`/${currentLanguage}/featured-projects/on-business-plan`}
                 src="/featured-projects/on-business-plan.png"
               />
               <PortfolioCard
-                title="Watchello"
-                subtitle="My Path from HTML to Machine Learning"
+                title={t("featuredProjects.watchello.title")}
+                subtitle={t("featuredProjects.watchello.subtitle")}
                 link={`/${currentLanguage}/featured-projects/watchello`}
                 src="/featured-projects/watchello.png"
               />
               <PortfolioCard
-                title="ProjectIn"
-                subtitle="Mastering Time Management for Freelancers"
+                title={t("featuredProjects.projectin.title")}
+                subtitle={t("featuredProjects.projectin.subtitle")}
                 link={`/${currentLanguage}/featured-projects/projectin`}
                 src="/featured-projects/projectin.png"
               />
