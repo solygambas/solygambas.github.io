@@ -11,10 +11,43 @@
     }
   },
   "caseStudies": {
-    "title": "Estudios de caso"
+    "title": "Estudios de caso",
+    "adevinta": {
+      "title": "Adevinta",
+      "subtitle": "Crear un sistema de diseño a nivel europeo",
+      "paragraphs": [""]
+    },
+    "credit-agricole-group-infrastructure-platform": {
+      "title": "Crédit Agricole Group Infrastructure Platform",
+      "subtitle": "Innovar en el sector bancario gracias a la nube",
+      "paragraphs": [""]
+    },
+    "ho36-hostels": {
+      "title": "HO36 Hostels",
+      "subtitle": "Mejorar la experiencia del usuario en un sitio de reservas de hoteles",
+      "paragraphs": [""]
+    }
   },
   "featuredProjects": {
-    "title": "Proyectos destacados"
+    "title": "Proyectos destacados",
+    "on-business-plan": {
+      "title": "On Business Plan",
+      "subtitle": "Apoyar a los emprendedores digitales",
+      "paragraphs": [""],
+      "url": "https://www.onbusinessplan.com/"
+    },
+    "projectin": {
+      "title": "ProjectIn",
+      "subtitle": "Ayudar a los freelancers a gestionar mejor su tiempo",
+      "paragraphs": [""],
+      "url": "https://projectin.netlify.app/"
+    },
+    "watchello": {
+      "title": "Watchello",
+      "subtitle": "Mi camino del HTML al Machine Learning",
+      "paragraphs": [""],
+      "url": "https://watchello.netlify.app/"
+    }
   },
   "backButton": {
     "text": "Atrás"
