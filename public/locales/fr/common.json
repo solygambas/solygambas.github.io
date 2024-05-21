@@ -11,10 +11,58 @@
     }
   },
   "caseStudies": {
-    "title": "Études de cas"
+    "title": "Études de cas",
+    "adevinta": {
+      "title": "Adevinta",
+      "subtitle": "Créer un design system à l'échelle européenne"
+    },
+    "credit-agricole-group-infrastructure-platform": {
+      "title": "Crédit Agricole Group Infrastructure Platform",
+      "subtitle": "Innover dans le secteur bancaire grâce au cloud"
+    },
+    "ho36-hostels": {
+      "title": "HO36 Hostels",
+      "subtitle": "Améliorer l'expérience utilisateur d'un site de réservation d'hôtels"
+    }
   },
   "featuredProjects": {
-    "title": "Projets phares"
+    "title": "Projets phares",
+    "on-business-plan": {
+      "title": "On Business Plan",
+      "subtitle": "Accompagner les entrepreneurs du numérique",
+      "paragraphs": [
+        "En 2012, alors que je travaillais en tant qu'investisseur dans l'économie numérique, j'ai reçu de nombreuses demandes pour des business plans. Cela m'a donné envie de commencer à publier des conseils via un blog et ensuite à vendre des modèles de business plans. Avec le temps, j'ai élargi mon offre pour proposer une collection d'ebooks, de vidéos et de podcasts couvrant les business models du numérique, la création de sites web avec WordPress et d'autres sujets liés à l'entrepreneuriat.",
+        "Ces années ont été incroyablement enrichissantes. J'ai partagé mes expériences dans le numérique et je me suis nourri des échanges avec les clients. J'ai développé mon activité en tant que consultant et mentor pour les entrepreneurs et les startups, en mettant l'accent sur les plateformes numériques, les applications de restauration et de voyage, et les sites web.",
+        "De manière intéressante, cette fonction de consultant a accru la demande pour mes compétences techniques. Les entrepreneurs débutants, ayant du mal à faire confier leurs économies aux agences ou aux développeurs, ont commencé à me faire confiance pour la création de leurs sites web. Cela m'a également ouvert des portes pour des contrats à plein temps avec de grandes entreprises comme Adevinta (leboncoin) et Crédit Agricole Group Infrastructure Platform.",
+        "On Business Plan est désormais une communauté dynamique sur YouTube et un blog en anglais mis à jour deux fois par semaine, où je partage mes analyses et des conseils pour les jeunes développeurs et les entrepreneurs débutants."
+      ],
+      "url": "https://www.onbusinessplan.com/"
+    },
+    "projectin": {
+      "title": "ProjectIn",
+      "subtitle": "Aider les freelances à mieux gérer leur temps",
+      "paragraphs": [
+        "En tant que freelance, gérer efficacement votre temps entre plusieurs projets peut être un défi. On se retrouve souvent à progresser sur une tâche tout en étant frustré de devoir mettre en pause une autre. Pendant des années, j'ai suivi mes heures de travail manuellement, notant comment je passais chaque jour.",
+        "ProjectIn est né de la volonté de simplifier ce processus. L'application permet de consigner des sessions de travail pour chaque projet et fournit des métriques hebdomadaires et mensuelles pour vous aider à comprendre comment vous passez votre temps.",
+        "De manière intéressante, ProjectIn a connu plusieurs débuts avortés. Ma première tentative était un projet appelé Revery, construit avec Gatsby et Material UI. Malgré sa conception soignée, l’application ne correspondait pas exactement à mes méthodes de suivi, j'ai donc continué à utiliser mon ancien système.",
+        "La deuxième tentative consistait à créer une application avec Flutter, que j'apprenais à l'époque. Bien que j'y sois parvenu, cela ne répondait toujours pas parfaitement à mes besoins.",
+        "La troisième tentative a été la bonne. J'ai utilisé du HTML, du CSS et du JavaScript pur, ainsi que le stockage local pour éviter d'avoir besoin d'une base de données au départ. J'ai reproduit ma méthode de prise de notes précédente, ce qui a donné un outil que j'ai commencé à utiliser quotidiennement.",
+        "Au fil du temps, j'ai amélioré ProjectIn avec la gestion des utilisateurs et une base de données en temps réel. Maintenant, j’utilise ProjectIn au quotidien, et le temps où je faisais le suivi de mon temps manuellement semble bien loin."
+      ],
+      "url": "https://projectin.netlify.app/"
+    },
+    "watchello": {
+      "title": "Watchello",
+      "subtitle": "Mon cheminement du HTML au Machine Learning",
+      "paragraphs": [
+        "Watchello a commencé comme un simple projet HTML et CSS conçu pour apprendre à utiliser les grilles, flexbox et transitions. Finalement, j'ai intégré une API de base de données de films pour commencer à récupérer des informations sur les films.",
+        "À l'époque, je faisais la liste des films que je voulais regarder et ceux que j'avais regardés en utilisant Evernote. Cela m'a donné envie de transformer le projet initial en une véritable application, appelée Watchello.",
+        "J'ai mis en place une gestion des utilisateurs et une base de données en temps réel, permettant aux utilisateurs de rechercher des films, d’en ajouter à leur liste de films à regarder et de suivre leur historique de visionnage.",
+        "Au fil des mois, j'ai continué à ajouter de nouvelles fonctionnalités. En exploitant mon expérience en apprentissage automatique, j'ai développé un algorithme de recommandation. Maintenant, chaque fois que les utilisateurs recherchent un film, l'application affiche un pourcentage de compatibilité basé sur leur historique de visionnage.",
+        "Ce projet illustre le parcours d'apprentissage que l’on peut avoir en construisant ses propres outils. En commençant un simple projet sans objectif clair, vous voyez progressivement des opportunités d'amélioration et d'expansion. Ainsi, le projet évolue en même temps que vous vous améliorez en tant que développeur."
+      ],
+      "url": "https://watchello.netlify.app/"
+    }
   },
   "backButton": {
     "text": "Retour"

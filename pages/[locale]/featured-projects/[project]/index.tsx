@@ -65,7 +65,7 @@ const FeaturedProjectPage = ({ project }: { project: FeaturedProjectKey }) => {
 
   return (
     <PortfolioItem
-      title={`${title}: ${subtitle}`}
+      title={`${title} - ${subtitle}`}
       paragraphs={paragraphs}
       src={`/featured-projects/${project}.png`}
       alt={title}

@@ -63,7 +63,7 @@ const CaseStudyPage = ({ caseStudy }: { caseStudy: CaseStudyKey }) => {
 
   return (
     <PortfolioItem
-      title={`${title}: ${subtitle}`}
+      title={`${title} - ${subtitle}`}
       paragraphs={paragraphs}
       src={`/case-studies/${caseStudy}.png`}
       alt={title}
