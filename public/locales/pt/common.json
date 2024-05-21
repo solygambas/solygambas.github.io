@@ -10,6 +10,12 @@
       "alt": "Logo do {{brand}}"
     }
   },
+  "caseStudies": {
+    "title": "Estudos de caso"
+  },
+  "featuredProjects": {
+    "title": "Projetos em destaque"
+  },
   "backButton": {
     "text": "Voltar"
   },

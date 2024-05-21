@@ -10,6 +10,12 @@
       "alt": "{{brand}} का लोगो"
     }
   },
+  "caseStudies": {
+    "title": "प्रकरण अध्ययन"
+  },
+  "featuredProjects": {
+    "title": "विशेष परियोजनाएँ"
+  },
   "backButton": {
     "text": "वापस"
   },
