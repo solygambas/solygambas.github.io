@@ -36,7 +36,7 @@
       "title": "HO36 Hostels",
       "subtitle": "Optimizar la experiencia del usuario en un sitio de reservas de hoteles",
       "paragraphs": [
-        "Durante la última década, me he especializado en proyectos de WordPress, colaborando frecuentemente con clientes que buscan experiencia técnica para alinear sus objetivos con sus limitaciones presupuestarias.",
+        "Durante la última década, me he especializado en proyectos en WordPress, colaborando frecuentemente con clientes que buscan experiencia técnica para alinear sus objetivos con sus limitaciones presupuestarias.",
         "Un proyecto destacado fue colaborar con HO36 Hostels en la remodelación de su sitio web. Aunque WordPress permite a los usuarios autónomos realizar muchas tareas por sí mismos, mi función era resolver problemas complejos para el equipo y añadir un toque profesional para mejorar la experiencia del usuario.",
         "Otro aspecto crucial fue la integración del sistema de reservas de Mews. Esta integración simplificó el proceso de reserva, permitiendo a HO36 Hostels, como grupo hotelero independiente, evitar las altas comisiones de las plataformas de reserva de terceros.",
         "Trabajando estrechamente con el equipo de marketing, tuve en cuenta sus objetivos comerciales y logré implementar soluciones en plazos ajustados."
@@ -48,19 +48,37 @@
     "on-business-plan": {
       "title": "On Business Plan",
       "subtitle": "Apoyar a los emprendedores digitales",
-      "paragraphs": [""],
+      "paragraphs": [
+        "En 2012, mientras trabajaba como inversor en la economía digital, recibí numerosas solicitudes de planes de negocio. Esto me llevó a empezar a publicar consejos a través de un blog y luego a vender plantillas de planes de negocio. Con el tiempo, amplié mi oferta para ofrecer una colección de libros electrónicos, videos y podcasts que abarcan modelos de negocio digitales, creación de sitios web con WordPress y otros temas relacionados con el emprendimiento.",
+        "Estos años han sido increíblemente enriquecedores. He compartido mis experiencias en el ámbito digital y he aprendido mucho de mis interacciones con los clientes. He desarrollado mi actividad como consultor y mentor para emprendedores y startups, centrándome en plataformas digitales, aplicaciones de restauración y viajes, y sitios web.",
+        "Curiosamente, esta función de consultor ha aumentado la demanda de mis habilidades técnicas. Los emprendedores principiantes, con dificultades para confiar sus inversiones en agencias o desarrolladores, han empezado a confiar en mí para la creación de sus sitios web. Esto también me ha abierto puertas para colaboraciones a tiempo completo con grandes empresas como Adevinta (leboncoin) y Crédit Agricole Group Infrastructure Platform.",
+        "On Business Plan es ahora una comunidad dinámica en YouTube y un blog en inglés actualizado dos veces por semana, donde comparto mis análisis y consejos para jóvenes desarrolladores y emprendedores principiantes."
+      ],
       "url": "https://www.onbusinessplan.com/"
     },
     "projectin": {
       "title": "ProjectIn",
       "subtitle": "Ayudar a los freelancers a gestionar mejor su tiempo",
-      "paragraphs": [""],
+      "paragraphs": [
+        "Como freelance, gestionar eficazmente tu tiempo entre varios proyectos puede ser un desafío. A menudo te encuentras avanzando en una tarea mientras te frustras por tener que detener otra. Durante años, llevé un registro manual de mis horas de trabajo, anotando cómo pasaba cada día.",
+        "ProjectIn nació de la necesidad de simplificar este proceso. La aplicación permite registrar sesiones de trabajo para cada proyecto y proporciona métricas semanales y mensuales para ayudarte a entender cómo pasas tu tiempo.",
+        "Curiosamente, ProjectIn tuvo varios comienzos fallidos. Mi primer intento fue un proyecto llamado Revery, construido con Gatsby y Material UI. A pesar de estar bien diseñado, la aplicación no se alineaba exactamente con mis métodos de seguimiento, así que seguí utilizando mi antiguo sistema.",
+        "El segundo intento implicó crear una aplicación con Flutter, que estaba aprendiendo en ese momento. Aunque lo logré, aún no satisfacía perfectamente mis necesidades.",
+        "El tercer intento fue exitoso. Utilicé HTML, CSS y JavaScript puro, junto con almacenamiento local para evitar la necesidad de una base de datos inicialmente. Reproduje mi método de toma de notas anterior, lo que resultó en una herramienta que comencé a usar diariamente.",
+        "Con el tiempo, mejoré ProjectIn con la gestión de usuarios y una base de datos en tiempo real. Ahora, uso ProjectIn a diario, y el tiempo en que llevaba un seguimiento manual de mi tiempo parece estar muy lejano."
+      ],
       "url": "https://projectin.netlify.app/"
     },
     "watchello": {
       "title": "Watchello",
       "subtitle": "Mi camino del HTML al Machine Learning",
-      "paragraphs": [""],
+      "paragraphs": [
+        "Watchello comenzó como un simple proyecto HTML y CSS diseñado para aprender a usar las cuadrículas, flexbox y transiciones. Con el tiempo, integré una API de base de datos de películas para empezar a obtener información sobre películas.",
+        "En ese momento, llevaba un registro de las películas que quería ver y las que ya había visto usando Evernote. Esto me inspiró a convertir el proyecto inicial en una verdadera aplicación, llamada Watchello.",
+        "Implementé la gestión de usuarios y una base de datos en tiempo real, lo que permitió a los usuarios buscar películas, agregarlas a su lista de películas para ver y hacer un seguimiento de su historial de visualización.",
+        "A lo largo de los meses, seguí agregando nuevas características. Utilizando mi experiencia en aprendizaje automático, desarrollé un algoritmo de recomendación. Ahora, cada vez que los usuarios buscan una película, la aplicación muestra un porcentaje de compatibilidad basado en su historial de visualización.",
+        "Este proyecto ejemplifica el proceso de aprendizaje que se puede experimentar al construir tus propias herramientas. Comenzando con un proyecto simple sin un objetivo claro, gradualmente ves oportunidades de mejora y expansión. Así, el proyecto evoluciona a medida que te perfeccionas como desarrollador."
+      ],
       "url": "https://watchello.netlify.app/"
     }
   },
