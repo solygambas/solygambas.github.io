@@ -11,10 +11,53 @@
     }
   },
   "caseStudies": {
-    "title": "Estudos de caso"
+    "title": "Estudos de caso",
+    "adevinta": {
+      "title": "Adevinta",
+      "subtitle": "Criar um sistema de design europeu",
+      "paragraphs": [
+        "Como tecnólogo criativo, arquiteto técnico e desenvolvedor principal, fui o primeiro desenvolvedor a juntar-se à equipe de design UI/UX de 25 pessoas no leboncoin. Meu papel consistia em auditar e melhorar o sistema de design, colaborando estreitamente com um designer dedicado.",
+        "Após um ano de iterações para melhorar nossos processos, tivemos a oportunidade de expandir nosso sistema de design por toda a Europa em colaboração com outras plataformas do grupo Adevinta: Kleinanzeigen na Alemanha, Milanuncios na Espanha, Subito na Itália e Marktplaats/2dehands no Benelux. Junto com colegas da Espanha e Alemanha, formamos uma equipe de 20 pessoas dedicada completamente ao sistema de design para as plataformas web, iOS nativa e Android nativa.",
+        "Nossos esforços faziam parte de uma iniciativa mais ampla destinada a unificar nossa experiência e facilitar a transição de uma identidade de marca para outra. Para isso, desenvolvi uma solução no Figma e estabeleci um pipeline para automatizar a entrega de ícones e tokens de cores diretamente do Figma para os desenvolvedores.",
+        "Começando com apenas um designer e uma pequena equipe, alcançamos avanços notáveis em dois anos, com um impacto em nível de grupo. Colaborar em um ambiente internacional foi tanto enriquecedor quanto desafiador. Gostei especialmente de fornecer ferramentas para os designers e desenvolvedores para que pudessem aproveitar nossos componentes e desenvolver interfaces mais rapidamente."
+      ]
+    },
+    "credit-agricole-group-infrastructure-platform": {
+      "title": "Crédit Agricole Group Infrastructure Platform",
+      "subtitle": "Inovar no setor bancário com a nuvem",
+      "paragraphs": [
+        "Como desenvolvedor full-stack principal e especialista em DevOps cloud, liderei uma equipe encarregada de desenvolver um portal interno na Crédit Agricole Group Infrastructure Platform. Este portal oferecia serviços de computação em nuvem sob demanda para todos os desenvolvedores do grupo, permitindo-lhes criar máquinas virtuais com facilidade.",
+        "Nosso principal desafio foi gerenciar eficientemente a escalabilidade do portal. Em apenas 6 meses, passamos de hospedar 1.000 para 15.000 servidores virtuais. Colaborar com os principais provedores de cloud, como Google Cloud, Microsoft Azure e Amazon Web Services, foi uma experiência única. Isso também me permitiu entender melhor o futuro da infraestrutura técnica no setor bancário, apesar das limitações impostas pelos sistemas legados, que enriqueceram minha compreensão dos princípios arquitetônicos.",
+        "Dada a experiência em backend de meus colegas, concentrei-me na implementação de um sistema de design. Este sistema permitia que os desenvolvedores backend criassem interfaces para o portal facilmente, mesmo com conhecimentos mínimos de CSS e acessibilidade. Além disso, eu guiei a equipe no aprendizado da tecnologia frontend para garantir uma integração dentro dos prazos estabelecidos.",
+        "Finalmente, dado que a Crédit Agricole dá grande importância ao seu impacto social, tive a oportunidade de ser mentor de dois aprendizes talentosos. Guiá-los em seu caminho para se tornarem profissionais de DevOps foi muito gratificante. Seu entusiasmo e curiosidade não apenas lhes permitiram desenvolver suas habilidades, mas também enriqueceram minha própria prática."
+      ]
+    },
+    "ho36-hostels": {
+      "title": "HO36 Hostels",
+      "subtitle": "Otimizar a experiência do usuário em um site de reservas de hotéis",
+      "paragraphs": [""]
+    }
   },
   "featuredProjects": {
-    "title": "Projetos em destaque"
+    "title": "Projetos em destaque",
+    "on-business-plan": {
+      "title": "On Business Plan",
+      "subtitle": "Apoiar os empreendedores digitais",
+      "paragraphs": [""],
+      "url": "https://www.onbusinessplan.com/"
+    },
+    "projectin": {
+      "title": "ProjectIn",
+      "subtitle": "Ajudar os freelancers a gerenciar melhor o seu tempo",
+      "paragraphs": [""],
+      "url": "https://projectin.netlify.app/"
+    },
+    "watchello": {
+      "title": "Watchello",
+      "subtitle": "Minha jornada do HTML ao Machine Learning",
+      "paragraphs": [""],
+      "url": "https://watchello.netlify.app/"
+    }
   },
   "backButton": {
     "text": "Voltar"
