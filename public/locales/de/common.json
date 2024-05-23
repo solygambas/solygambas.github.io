@@ -11,10 +11,58 @@
     }
   },
   "caseStudies": {
-    "title": "Fallstudien"
+    "title": "Fallstudien",
+    "adevinta": {
+      "title": "Adevinta",
+      "subtitle": "Ein europäisches Designsystem entwickeln",
+      "paragraphs": [
+        "Als kreativer Technologe, technischer Architekt und leitender Entwickler war ich der erste Entwickler, der dem 25-köpfigen Designteam des Marktplatzes leboncoin beitrat. Meine Aufgabe bestand darin, das Designsystem zu prüfen und zu verbessern, indem ich eng mit einem engagierten Designer zusammenarbeitete.",
+        "Nach einem Jahr der Verfeinerung unserer Prozesse nutzten wir die Gelegenheit, unser Designsystem in ganz Europa in Zusammenarbeit mit anderen Marktplätzen der Adevinta-Gruppe zu erweitern - Kleinanzeigen in Deutschland, Milanuncios in Spanien, Subito in Italien und Marktplaats/2dehands in den Benelux-Ländern. Gemeinsam mit Kollegen aus Spanien und Deutschland bildeten wir ein spezialisiertes Team von 20 Mitgliedern, das sich ausschließlich auf das Designsystem für Web-, native iOS- und native Android-Plattformen konzentrierte.",
+        "Unsere Anstrengungen waren Teil einer breiteren Initiative zur Konsolidierung unseres Fachwissens und zur Ermöglichung nahtloser Markenübergänge. Um dies zu erreichen, entwickelte ich eine Figma-Lösung und implementierte eine Pipeline, um die Bereitstellung von Icons und Farb-Token direkt von Figma zu den Entwicklern zu automatisieren.",
+        "Ausgehend von nur einem Designer und einem kleinen Team erzielten wir in zwei Jahren bemerkenswerte Fortschritte, die unsere gesamte Gruppe beeinflussten. Die Zusammenarbeit in einem internationalen Umfeld war sowohl bereichernd als auch herausfordernd. Besonders genossen habe ich es, Designer und Entwickler zu befähigen, unsere Komponenten zu nutzen und Schnittstellen schneller zu entwickeln."
+      ]
+    },
+    "credit-agricole-group-infrastructure-platform": {
+      "title": "Crédit Agricole Group Infrastructure Platform",
+      "subtitle": "Bankensektor-Innovationen durch die Cloud",
+      "paragraphs": [
+        "In meiner Rolle als Full-Stack Lead Developer und DevOps-Cloud-Experte leitete ich ein Team, das mit der Entwicklung eines internen Portals bei der Crédit Agricole Group Infrastructure Platform beauftragt war. Dieses Portal bot allen Entwicklern innerhalb der Organisation Cloud-Computing-Dienste auf Abruf an und ermöglichte es ihnen, virtuelle Maschinen leicht zu erstellen.",
+        "Unsere Hauptherausforderung bestand darin, das Portal effizient zu skalieren. Innerhalb von nur 6 Monaten haben wir die Anzahl der gehosteten virtuellen Server von 1.000 auf 15.000 erhöht. Die Zusammenarbeit mit großen Cloud-Anbietern wie Google Cloud, Microsoft Azure und Amazon Web Services war spannend. Sie bot auch Einblicke in die Zukunft der technischen Infrastruktur im Bankensektor, trotz der Herausforderungen durch veraltete Systeme, die mein Verständnis der Architekturprinzipien bereicherten.",
+        "Angesichts der Backend-Expertise meiner Teamkollegen konzentrierte ich mich auf die Einrichtung eines Designsystems. Dieses System befähigte Backend-Entwickler, Portal-Oberflächen mühelos zu erstellen, selbst mit minimalen Kenntnissen in CSS und Barrierefreiheit. Außerdem leitete ich den Onboarding-Prozess für den Frontend-Stack, um eine reibungslose Integration sicherzustellen.",
+        "Da Crédit Agricole großen Wert auf ihren sozialen Einfluss legt, hatte ich zudem das Privileg, zwei talentierte Auszubildende zu betreuen. Sie auf ihrem Weg zu DevOps-Profis zu begleiten, war eine bereichernde Erfahrung. Ihr Enthusiasmus und ihre Neugierde verbesserten nicht nur ihre Fähigkeiten, sondern bereicherten auch mein eigenes Lernspektrum."
+      ]
+    },
+    "ho36-hostels": {
+      "title": "HO36 Hostels",
+      "subtitle": "Optimierung der Nutzererfahrung auf einer Hotelbuchungsseite",
+      "paragraphs": [
+        "Über das vergangene Jahrzehnt habe ich mich auf WordPress-Projekte spezialisiert und arbeite häufig mit Erstkunden zusammen, um ihre Ziele mit ihren Budgetbeschränkungen in Einklang zu bringen.",
+        "Ein bemerkenswertes Projekt war HO36 Hostels, bei dem ich zur Neugestaltung ihrer Website beitrug. Während WordPress es autonomen Benutzern ermöglicht, viel eigenständig zu erreichen, bestand meine Rolle darin, bestehende Probleme anzugehen und professionelle Akzente hinzuzufügen, die das Besuchererlebnis verbessern.",
+        "Ein weiterer entscheidender Aspekt war die Integration des Mews-Buchungssystems. Diese Integration vereinfachte den Reservierungsprozess und ermöglichte es HO36 Hostels als unabhängige Unterkunftsgruppe, hohe Provisionen von Drittanbieter-Buchungsplattformen zu vermeiden.",
+        "Durch enge Zusammenarbeit mit dem Marketingteam erlangte ich Einblicke in ihre Geschäftsziele und setzte erfolgreich Lösungen innerhalb enger Zeitvorgaben um."
+      ]
+    }
   },
   "featuredProjects": {
-    "title": "Ausgewählte Projekte"
+    "title": "Ausgewählte Projekte",
+    "on-business-plan": {
+      "title": "On Business Plan",
+      "subtitle": "Digitale Unternehmer fördern",
+      "paragraphs": [""],
+      "url": "https://www.onbusinessplan.com/"
+    },
+    "projectin": {
+      "title": "ProjectIn",
+      "subtitle": "Freelancern helfen, ihre Zeit effizienter zu verwalten",
+      "paragraphs": [""],
+      "url": "https://projectin.netlify.app/"
+    },
+    "watchello": {
+      "title": "Watchello",
+      "subtitle": "Mein Weg vom HTML zum Machine Learning",
+      "paragraphs": [""],
+      "url": "https://watchello.netlify.app/"
+    }
   },
   "backButton": {
     "text": "Zurück"
