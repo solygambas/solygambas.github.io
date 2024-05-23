@@ -48,19 +48,37 @@
     "on-business-plan": {
       "title": "On Business Plan",
       "subtitle": "Supportare gli imprenditori digitali",
-      "paragraphs": [""],
+      "paragraphs": [
+        "Nel 2012, mentre lavoravo come investitore nell'economia digitale, ho ricevuto numerose richieste di piani aziendali. Questo mi ha portato a iniziare a pubblicare consigli tramite un blog e successivamente a vendere modelli di piani aziendali. Con il tempo, ho ampliato la mia offerta per includere una collezione di ebook, video e podcast che coprono modelli di business digitali, creazione di siti web con WordPress e altri argomenti legati all'imprenditoria.",
+        "Questi anni sono stati incredibilmente arricchenti. Ho condiviso le mie esperienze nel campo digitale e ho imparato molto dalle mie interazioni con i clienti. Ho sviluppato la mia attività come consulente e mentore per imprenditori e startup, concentrandomi su piattaforme digitali, applicazioni per la ristorazione e i viaggi, e siti web.",
+        "Curiosamente, questo ruolo di consulente ha aumentato la domanda delle mie competenze tecniche. Gli imprenditori principianti, con difficoltà a fidarsi delle agenzie o degli sviluppatori con i loro risparmi, hanno iniziato a rivolgersi a me per la creazione dei loro siti web. Questo mi ha anche aperto le porte per collaborazioni a tempo pieno con grandi aziende come Adevinta (leboncoin) e Crédit Agricole Group Infrastructure Platform.",
+        "On Business Plan è ora una comunità dinamica su YouTube e un blog in inglese aggiornato due volte a settimana, dove condivido le mie analisi e i miei consigli per giovani sviluppatori e imprenditori principianti."
+      ],
       "url": "https://www.onbusinessplan.com/"
     },
     "projectin": {
       "title": "ProjectIn",
       "subtitle": "Aiutare i freelance a gestire meglio il loro tempo",
-      "paragraphs": [""],
+      "paragraphs": [
+        "Come freelance, gestire efficacemente il tuo tempo tra vari progetti può essere una sfida. Spesso ti trovi a progredire su un compito mentre ti frustri per doverne fermare un altro. Per anni, ho tenuto un registro manuale delle mie ore di lavoro, annotando come trascorrevo ogni giorno.",
+        "ProjectIn è nato dalla necessità di semplificare questo processo. L'applicazione consente di registrare le sessioni di lavoro per ogni progetto e fornisce metriche settimanali e mensili per aiutarti a capire come trascorri il tuo tempo.",
+        "Curiosamente, ProjectIn ha avuto diversi inizi falliti. Il mio primo tentativo è stato un progetto chiamato Revery, costruito con Gatsby e Material UI. Nonostante fosse ben progettato, l'applicazione non si allineava esattamente con i miei metodi di monitoraggio, quindi ho continuato a utilizzare il mio vecchio sistema.",
+        "Il secondo tentativo ha comportato la creazione di un'applicazione con Flutter, che stavo imparando in quel momento. Sebbene ci sia riuscito, ancora non soddisfaceva perfettamente le mie esigenze.",
+        "Il terzo tentativo è stato quello giusto. Ho utilizzato HTML, CSS e JavaScript puro, insieme all'archiviazione locale per evitare inizialmente la necessità di un database. Ho riprodotto il mio precedente metodo di annotazione, il che ha portato a uno strumento che ho iniziato a usare quotidianamente.",
+        "Col tempo, ho migliorato ProjectIn con la gestione degli utenti e un database in tempo reale. Ora uso ProjectIn quotidianamente, e il tempo in cui tenevo manualmente traccia delle mie ore sembra molto lontano."
+      ],
       "url": "https://projectin.netlify.app/"
     },
     "watchello": {
       "title": "Watchello",
       "subtitle": "Il mio percorso dall'HTML al Machine Learning",
-      "paragraphs": [""],
+      "paragraphs": [
+        "Watchello è iniziato come un semplice progetto HTML e CSS progettato per imparare a usare le griglie, flexbox e transizioni. Con il tempo, ho integrato un'API di database di film per iniziare a ottenere informazioni sui film.",
+        "In quel momento, tenevo un registro dei film che volevo vedere e di quelli che avevo già visto usando Evernote. Questo mi ha ispirato a trasformare il progetto iniziale in una vera applicazione, chiamata Watchello.",
+        "Ho implementato la gestione degli utenti e un database in tempo reale, il che ha permesso agli utenti di cercare film, aggiungerli alla loro lista di film da vedere e tenere traccia della loro cronologia di visione.",
+        "Nel corso dei mesi, ho continuato ad aggiungere nuove funzionalità. Utilizzando la mia esperienza in apprendimento automatico, ho sviluppato un algoritmo di raccomandazione. Ora, ogni volta che gli utenti cercano un film, l'applicazione mostra una percentuale di compatibilità basata sulla loro cronologia di visione.",
+        "Questo progetto esemplifica il processo di apprendimento che si può sperimentare costruendo i propri strumenti. Iniziando con un progetto semplice senza un obiettivo chiaro, vedi gradualmente opportunità di miglioramento ed espansione. Così, il progetto evolve man mano che migliori come sviluppatore."
+      ],
       "url": "https://watchello.netlify.app/"
     }
   },
