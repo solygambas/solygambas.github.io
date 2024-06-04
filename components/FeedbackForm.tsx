@@ -3,7 +3,6 @@ import { useTranslation } from "next-i18next";
 import styles from "../styles/FeedbackForm.module.css";
 
 function FeedbackFrom() {
-  const router = useRouter();
   const { t } = useTranslation("common");
   return (
     <form
