@@ -6,6 +6,7 @@ import { getStaticPaths, makeStaticProps } from "../../lib/getStatic";
 import { useTranslation } from "next-i18next";
 import SocialMediaIcon from "../../components/SocialMediaIcon";
 import PortfolioCard from "../../components/PortfolioCard";
+import FeedbackFrom from "../../components/FeedbackForm";
 
 const getStaticProps = makeStaticProps(["common", "footer"]);
 export { getStaticPaths, getStaticProps };
@@ -138,6 +139,11 @@ export default function Home() {
           </section>
 
           {/* Contact section */}
+          <section className={styles.contactSection}>
+            <h2>{t("contact.title")}</h2>
+            <p>{t("contact.description")}</p>
+            <FeedbackFrom />
+          </section>
         </div>
         <Footer />
       </div>

@@ -4,6 +4,7 @@
   --background-color: #041619;
   --background-alternate-color: #07252b;
   --border-color: #040518;
+  --border-radius: 4px;
 }
 
 * {

@@ -87,5 +87,13 @@
   },
   "visitButton": {
     "text": "Visit {{website}}"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "description": "Feel free to reach out to discuss your project!",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "submit": "Send"
   }
 }
