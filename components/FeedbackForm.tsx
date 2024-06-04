@@ -9,7 +9,7 @@ function FeedbackFrom() {
     <form
       className={styles.contactForm}
       id="portfolio-feedback"
-      action={process.env.FORM_URL}
+      action="https://formspree.io/f/xyyrqnpz" // Replace with your own form endpoint
       method="POST"
     >
       <div className={styles.formGroup}>
