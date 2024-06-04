@@ -87,5 +87,13 @@
   },
   "visitButton": {
     "text": "Visita {{website}}"
+  },
+  "contact": {
+    "title": "Contattami",
+    "description": "Sentiti libero di contattarmi per discutere del tuo progetto!",
+    "name": "Nome",
+    "email": "Email",
+    "message": "Messaggio",
+    "submit": "Invia"
   }
 }

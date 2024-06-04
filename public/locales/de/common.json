@@ -87,5 +87,13 @@
   },
   "visitButton": {
     "text": "Besuchen Sie {{website}}"
+  },
+  "contact": {
+    "title": "Kontaktieren Sie mich",
+    "description": "Zögern Sie nicht, mich zu kontaktieren, um Ihr Projekt zu besprechen!",
+    "name": "Name",
+    "email": "E-Mail",
+    "message": "Nachricht",
+    "submit": "Senden"
   }
 }
