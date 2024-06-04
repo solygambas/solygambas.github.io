@@ -7,7 +7,7 @@ function FeedbackFrom() {
     <form
       className={styles.contactForm}
       id="portfolio-feedback"
-      action="https://formspree.io/f/xyyrqnpz" // Replace with your own form endpoint
+      action="https://formspree.io/f/xyyrqnpz"
       method="POST"
     >
       <div className={styles.formGroup}>
