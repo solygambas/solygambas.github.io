@@ -70,10 +70,8 @@
 
 .contactSection {
   background-color: var(--background-alternate-color);
-  padding: 2rem;
-  margin: 4rem 0;
-  border: 5px solid var(--border-color);
-  border-radius: 8px;
+  padding: 1rem;
+  border-radius: var(--border-radius);
 }
 
 .contactSection h2 {
@@ -106,6 +104,11 @@
     display: grid;
     grid-template-columns: repeat(2, minmax(300px, 1fr));
     gap: 1rem;
+  }
+  .contactSection {
+    padding: 2rem;
+    margin: 4rem 0;
+    border: 5px solid var(--border-color);
   }
 }
 
