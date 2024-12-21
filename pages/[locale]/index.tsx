@@ -73,6 +73,15 @@ export default function Home() {
                   href="https://bit.ly/googlecloudskills-solygambas"
                   src="/icons/google-cloud.svg"
                 />
+                <SocialMediaIcon
+                  title={
+                    t("hero.brand.social", {
+                      brand: "DeepLearning.AI",
+                    }) as string
+                  }
+                  href="https://bit.ly/deeplearningai-solygambas"
+                  src="/icons/deeplearning.svg"
+                />
               </ul>
             </div>
             <div className={styles.heroImage}>

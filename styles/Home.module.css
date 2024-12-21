@@ -41,7 +41,7 @@
 .hero ul {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(3, minmax(100px, 1fr));
+  grid-template-columns: repeat(4, minmax(75px, 1fr));
   justify-items: center;
   margin-top: 1.5rem;
   gap: 1.5rem;
@@ -94,9 +94,6 @@
   .heroText {
     width: 19rem;
   }
-  .hero ul {
-    display: flex;
-  }
   .portfolioContainer h2 {
     text-align: left;
   }
@@ -136,6 +133,9 @@
   }
   .hero p {
     font-size: 2rem;
+  }
+  .hero ul {
+    display: flex;
   }
   .heroImage {
     min-width: 350px;
