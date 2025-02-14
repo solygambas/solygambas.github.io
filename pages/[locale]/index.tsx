@@ -39,7 +39,7 @@ export default function Home() {
                   title={
                     t("hero.brand.social", { brand: "LinkedIn" }) as string
                   }
-                  href="https://bit.ly/solygambas"
+                  href="https://www.onbusinessplan.com/linkedin"
                   src="/icons/linkedin.svg"
                 />
                 <SocialMediaIcon
@@ -70,7 +70,7 @@ export default function Home() {
                       brand: "Google Cloud Skills",
                     }) as string
                   }
-                  href="https://bit.ly/googlecloudskills-solygambas"
+                  href="https://www.onbusinessplan.com/googlecloudskills"
                   src="/icons/google-cloud.svg"
                 />
                 <SocialMediaIcon
@@ -79,7 +79,7 @@ export default function Home() {
                       brand: "DeepLearning.AI",
                     }) as string
                   }
-                  href="https://bit.ly/deeplearningai-solygambas"
+                  href="https://www.onbusinessplan.com/deeplearningai"
                   src="/icons/deeplearning.svg"
                 />
               </ul>
