@@ -73,15 +73,6 @@ export default function Home() {
                   href="https://www.onbusinessplan.com/googlecloudskills"
                   src="/icons/google-cloud.svg"
                 />
-                <SocialMediaIcon
-                  title={
-                    t("hero.brand.social", {
-                      brand: "DeepLearning.AI",
-                    }) as string
-                  }
-                  href="https://www.onbusinessplan.com/deeplearningai"
-                  src="/icons/deeplearning.svg"
-                />
               </ul>
             </div>
             <div className={styles.heroImage}>
@@ -105,10 +96,10 @@ export default function Home() {
               />
               <PortfolioCard
                 title={t(
-                  "caseStudies.credit-agricole-group-infrastructure-platform.title"
+                  "caseStudies.credit-agricole-group-infrastructure-platform.title",
                 )}
                 subtitle={t(
-                  "caseStudies.credit-agricole-group-infrastructure-platform.subtitle"
+                  "caseStudies.credit-agricole-group-infrastructure-platform.subtitle",
                 )}
                 link={`/${currentLanguage}/case-studies/credit-agricole-group-infrastructure-platform`}
                 src="/case-studies/credit-agricole-group-infrastructure-platform.png"
