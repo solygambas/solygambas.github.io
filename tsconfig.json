@@ -20,7 +20,7 @@
     "noImplicitReturns": true,
     "noImplicitOverride": true,
     "exactOptionalPropertyTypes": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "incremental": true
   },
   "include": [
