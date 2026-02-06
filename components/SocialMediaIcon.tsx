@@ -1,10 +1,10 @@
 import Image from "next/image";
 
-type SocialMediaIconProps = {
+interface SocialMediaIconProps {
   title: string;
   href: string;
   src: string;
-};
+}
 
 const SocialMediaIcon = ({ title, href, src }: SocialMediaIconProps) => {
   return (

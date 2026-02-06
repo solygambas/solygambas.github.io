@@ -4,7 +4,7 @@ import languageDetector from "./languageDetector";
 
 export const useRedirect = (to?: string) => {
   const router = useRouter();
-  to = to || router.asPath;
+  to = to ?? router.asPath;
 
   // Language detection
   useEffect(() => {
@@ -12,14 +12,14 @@ export const useRedirect = (to?: string) => {
     if (detectedLng) {
       if (to.startsWith("/" + detectedLng) && router.route === "/404") {
         // Prevent endless loop
-        router.replace("/" + detectedLng + router.route);
+        void router.replace("/" + detectedLng + router.route);
         return;
       }
 
-      languageDetector.cache && languageDetector.cache(detectedLng);
-      router.replace("/" + detectedLng + to);
+      languageDetector.cache?.(detectedLng);
+      void router.replace("/" + detectedLng + to);
     }
-  });
+  }, [router, to]);
 
   return <></>;
 };
@@ -29,7 +29,6 @@ export const Redirect = () => {
   return <></>;
 };
 
-// eslint-disable-next-line react/display-name
 export const getRedirect = (to: string) => () => {
   useRedirect(to);
   return <></>;

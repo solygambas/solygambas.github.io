@@ -7,7 +7,9 @@ import styles from "../styles/Footer.module.css";
 export const Footer = () => {
   const router = useRouter();
   const { t } = useTranslation("footer");
-  const currentLocale = router.query.locale || i18nextConfig.i18n.defaultLocale;
+  const currentLocale =
+    (Array.isArray(router.query.locale) ? router.query.locale[0] : router.query.locale) ??
+    i18nextConfig.i18n.defaultLocale;
 
   return (
     <footer>

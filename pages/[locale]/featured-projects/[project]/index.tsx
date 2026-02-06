@@ -6,12 +6,12 @@ import PortfolioItem from "../../../../components/PortfolioItem";
 
 type FeaturedProjectKey = keyof typeof featuredProjectKeys;
 
-type FeaturedProjectData = {
+interface FeaturedProjectData {
   title: string;
   subtitle: string;
   paragraphs: string[];
   url: string;
-};
+}
 
 const featuredProjectKeys = {
   "on-business-plan": "on-business-plan",
@@ -19,7 +19,7 @@ const featuredProjectKeys = {
   watchello: "watchello",
 };
 
-export const getStaticPaths: GetStaticPaths = async () => {
+export const getStaticPaths: GetStaticPaths = () => {
   const featuredProjectsKeys = Object.keys(featuredProjectKeys);
 
   const paths = i18nextConfig.i18n.locales.flatMap((locale: string) =>
@@ -56,12 +56,11 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
 const FeaturedProjectPage = ({ project }: { project: FeaturedProjectKey }) => {
   const { t } = useTranslation("common");
-  const { title, subtitle, paragraphs, url } = t(
-    `featuredProjects.${featuredProjectKeys[project]}`,
-    {
+  const data =
+    t(`featuredProjects.${featuredProjectKeys[project]}`, {
       returnObjects: true,
-    }
-  ) as FeaturedProjectData;
+    }) as unknown as FeaturedProjectData;
+  const { title, subtitle, paragraphs, url } = data;
 
   return (
     <PortfolioItem

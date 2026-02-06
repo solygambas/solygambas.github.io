@@ -19,7 +19,7 @@ export default function Home() {
     <>
       <Head>
         <title>{t("title")}</title>
-        <meta name="description" content={t("description") as string} />
+        <meta name="description" content={t("description")} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -37,29 +37,29 @@ export default function Home() {
               <ul className={styles.socialLinks}>
                 <SocialMediaIcon
                   title={
-                    t("hero.brand.social", { brand: "LinkedIn" }) as string
+                    t("hero.brand.social", { brand: "LinkedIn" })
                   }
                   href="https://www.onbusinessplan.com/linkedin"
                   src="/icons/linkedin.svg"
                 />
                 <SocialMediaIcon
-                  title={t("hero.brand.social", { brand: "X" }) as string}
+                  title={t("hero.brand.social", { brand: "X" })}
                   href="https://x.com/solygambas"
                   src="/icons/x.svg"
                 />
                 <SocialMediaIcon
-                  title={t("hero.brand.social", { brand: "GitHub" }) as string}
+                  title={t("hero.brand.social", { brand: "GitHub" })}
                   href="https://github.com/solygambas"
                   src="/icons/github.svg"
                 />
                 <SocialMediaIcon
-                  title={t("hero.brand.social", { brand: "CodePen" }) as string}
+                  title={t("hero.brand.social", { brand: "CodePen" })}
                   href="https://codepen.io/solygambas"
                   src="/icons/codepen.svg"
                 />
                 <SocialMediaIcon
                   title={
-                    t("hero.brand.social", { brand: "Dribbble" }) as string
+                    t("hero.brand.social", { brand: "Dribbble" })
                   }
                   href="https://dribbble.com/solygambas"
                   src="/icons/dribbble.svg"
@@ -68,7 +68,7 @@ export default function Home() {
                   title={
                     t("hero.brand.social", {
                       brand: "Google Cloud Skills",
-                    }) as string
+                    })
                   }
                   href="https://www.onbusinessplan.com/googlecloudskills"
                   src="/icons/google-cloud.svg"
@@ -78,7 +78,7 @@ export default function Home() {
             <div className={styles.heroImage}>
               <Image
                 src="/hero.jpg"
-                alt={t("hero.alt") as string}
+                alt={t("hero.alt")}
                 fill
                 priority
               />

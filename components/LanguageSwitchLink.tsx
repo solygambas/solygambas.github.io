@@ -3,22 +3,23 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import styles from "../styles/LanguageSwitchLink.module.css";
 
-type LanguageSwitchLinkProps = {
+interface LanguageSwitchLinkProps {
   locale: string;
   href?: string;
-};
+}
 
 const LanguageSwitchLink = ({ locale, href }: LanguageSwitchLinkProps) => {
   const router = useRouter();
 
-  let link = href || router.asPath;
+  let link = href ?? router.asPath;
   let pName = router.pathname;
   Object.keys(router.query).forEach((k) => {
     if (k === "locale") {
-      pName = pName.replace(`[${k}]`, locale as string);
+      pName = pName.replace(`[${k}]`, locale);
       return;
     }
-    pName = pName.replace(`[${k}]`, router.query[k] as string);
+    const q = router.query[k];
+    pName = pName.replace(`[${k}]`, Array.isArray(q) ? q[0] : (q!));
   });
   if (locale) {
     link = href ? `/${locale}${href}` : pName;
@@ -27,7 +28,7 @@ const LanguageSwitchLink = ({ locale, href }: LanguageSwitchLinkProps) => {
   return (
     <Link
       href={link}
-      onClick={() => languageDetector.cache && languageDetector.cache(locale)}
+      onClick={() => languageDetector.cache?.(locale)}
     >
       <button className={styles.button}>{locale.toUpperCase()}</button>
     </Link>

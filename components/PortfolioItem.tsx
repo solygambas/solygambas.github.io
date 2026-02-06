@@ -4,13 +4,13 @@ import { useTranslation } from "next-i18next";
 import BackButton from "./BackButton";
 import styles from "../styles/PortfolioItem.module.css";
 
-type PortfolioItemProps = {
+interface PortfolioItemProps {
   title: string;
   paragraphs: string[];
   src: string;
   alt: string;
   url?: string;
-};
+}
 
 function PortfolioItem({
   title,

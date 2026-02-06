@@ -2,12 +2,12 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/PortfolioCard.module.css";
 
-type PortfolioCardProps = {
+interface PortfolioCardProps {
   title: string;
   subtitle: string;
   link: string;
   src: string;
-};
+}
 
 const PortfolioCard = ({ title, subtitle, link, src }: PortfolioCardProps) => {
   return (

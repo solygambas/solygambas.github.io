@@ -2,9 +2,9 @@ import { GetStaticPropsContext, GetStaticPathsResult } from "next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import i18nextConfig from "../next-i18next.config";
 
-type Params = {
+interface Params {
   locale: string;
-};
+}
 
 export const getI18nPaths = (): { params: Params }[] =>
   i18nextConfig.i18n.locales.map((lng: string) => ({
@@ -23,7 +23,7 @@ export async function getI18nProps(
   ns: string[] = ["common"]
 ) {
   const locale = ctx?.params?.locale as string;
-  let props = {
+  const props = {
     ...(await serverSideTranslations(locale, ns)),
   };
   return props;

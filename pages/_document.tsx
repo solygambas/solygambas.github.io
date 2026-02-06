@@ -15,14 +15,17 @@ interface DocumentProps extends DocumentInitialProps {
 class MyDocument extends Document<DocumentProps> {
   static override async getInitialProps(ctx: DocumentContext) {
     const initialProps = await Document.getInitialProps(ctx);
-    const currentLocale = ctx.query.locale || i18nextConfig.i18n.defaultLocale;
+    const rawLocale = Array.isArray(ctx.query.locale)
+      ? ctx.query.locale[0]
+      : (ctx.query.locale);
+    const currentLocale = rawLocale ?? i18nextConfig.i18n.defaultLocale;
     return { ...initialProps, currentLocale };
   }
 
   override render() {
     const { currentLocale } = this.props;
     return (
-      <Html lang={currentLocale as string}>
+      <Html lang={currentLocale}>
         <Head />
         <body>
           <Main />

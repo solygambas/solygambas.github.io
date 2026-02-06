@@ -6,11 +6,11 @@ import PortfolioItem from "../../../../components/PortfolioItem";
 
 type CaseStudyKey = keyof typeof caseStudyKeys;
 
-type CaseStudyData = {
+interface CaseStudyData {
   title: string;
   subtitle: string;
   paragraphs: string[];
-};
+}
 
 const caseStudyKeys = {
   adevinta: "adevinta",
@@ -19,7 +19,7 @@ const caseStudyKeys = {
   "ho36-hostels": "ho36-hostels",
 };
 
-export const getStaticPaths: GetStaticPaths = async () => {
+export const getStaticPaths: GetStaticPaths = () => {
   const caseStudiesKeys = Object.keys(caseStudyKeys);
 
   const paths = i18nextConfig.i18n.locales.flatMap((locale: string) =>
@@ -54,12 +54,11 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
 const CaseStudyPage = ({ caseStudy }: { caseStudy: CaseStudyKey }) => {
   const { t } = useTranslation("common");
-  const { title, subtitle, paragraphs } = t(
-    `caseStudies.${caseStudyKeys[caseStudy]}`,
-    {
+  const data =
+    t(`caseStudies.${caseStudyKeys[caseStudy]}`, {
       returnObjects: true,
-    }
-  ) as CaseStudyData;
+    }) as unknown as CaseStudyData;
+  const { title, subtitle, paragraphs } = data;
 
   return (
     <PortfolioItem
