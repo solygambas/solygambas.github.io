@@ -1,8 +1,9 @@
 import { GetStaticPropsContext, GetStaticPathsResult } from "next";
+import { ParsedUrlQuery } from "querystring";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import i18nextConfig from "../next-i18next.config";
 
-interface Params {
+interface Params extends ParsedUrlQuery {
   locale: string;
 }
 
