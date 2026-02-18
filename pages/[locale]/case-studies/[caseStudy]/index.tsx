@@ -54,10 +54,9 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
 const CaseStudyPage = ({ caseStudy }: { caseStudy: CaseStudyKey }) => {
   const { t } = useTranslation("common");
-  const data =
-    t(`caseStudies.${caseStudyKeys[caseStudy]}`, {
-      returnObjects: true,
-    }) as unknown as CaseStudyData;
+  const data = t(`caseStudies.${caseStudyKeys[caseStudy]}`, {
+    returnObjects: true,
+  }) as unknown as CaseStudyData;
   const { title, subtitle, paragraphs } = data;
 
   return (
