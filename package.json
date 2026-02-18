@@ -7,8 +7,10 @@
     "build": "next build",
     "start": "npx serve@latest out",
     "type-check": "tsc --noEmit",
+    "format": "prettier --write .",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "validate": "npm run type-check && npm run lint && npm run build"
   },
   "dependencies": {
     "next": "^16.1.6",
@@ -26,6 +28,7 @@
     "eslint-config-next": "^16.1.6",
     "next-i18next": "^15.4.3",
     "next-language-detector": "^1.1.1",
+    "prettier": "^3.8.1",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.54.0"
   }

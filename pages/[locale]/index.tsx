@@ -36,9 +36,7 @@ export default function Home() {
               <h2>{t("hero.experience")}</h2>
               <ul className={styles.socialLinks}>
                 <SocialMediaIcon
-                  title={
-                    t("hero.brand.social", { brand: "LinkedIn" })
-                  }
+                  title={t("hero.brand.social", { brand: "LinkedIn" })}
                   href="https://www.onbusinessplan.com/linkedin"
                   src="/icons/linkedin.svg"
                 />
@@ -58,30 +56,21 @@ export default function Home() {
                   src="/icons/codepen.svg"
                 />
                 <SocialMediaIcon
-                  title={
-                    t("hero.brand.social", { brand: "Dribbble" })
-                  }
+                  title={t("hero.brand.social", { brand: "Dribbble" })}
                   href="https://dribbble.com/solygambas"
                   src="/icons/dribbble.svg"
                 />
                 <SocialMediaIcon
-                  title={
-                    t("hero.brand.social", {
-                      brand: "Google Cloud Skills",
-                    })
-                  }
+                  title={t("hero.brand.social", {
+                    brand: "Google Cloud Skills",
+                  })}
                   href="https://www.onbusinessplan.com/googlecloudskills"
                   src="/icons/google-cloud.svg"
                 />
               </ul>
             </div>
             <div className={styles.heroImage}>
-              <Image
-                src="/hero.jpg"
-                alt={t("hero.alt")}
-                fill
-                priority
-              />
+              <Image src="/hero.jpg" alt={t("hero.alt")} fill priority />
             </div>
           </section>
 
@@ -96,10 +85,10 @@ export default function Home() {
               />
               <PortfolioCard
                 title={t(
-                  "caseStudies.credit-agricole-group-infrastructure-platform.title",
+                  "caseStudies.credit-agricole-group-infrastructure-platform.title"
                 )}
                 subtitle={t(
-                  "caseStudies.credit-agricole-group-infrastructure-platform.subtitle",
+                  "caseStudies.credit-agricole-group-infrastructure-platform.subtitle"
                 )}
                 link={`/${currentLanguage}/case-studies/credit-agricole-group-infrastructure-platform`}
                 src="/case-studies/credit-agricole-group-infrastructure-platform.png"

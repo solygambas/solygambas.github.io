@@ -14,8 +14,8 @@ const LinkComponent = ({
   ...rest
 }: LinkComponentProps) => {
   const router = useRouter();
-  const rawLocale = rest.locale ?? (router.query.locale);
-  const locale = Array.isArray(rawLocale) ? rawLocale[0] : rawLocale ?? "";
+  const rawLocale = rest.locale ?? router.query.locale;
+  const locale = Array.isArray(rawLocale) ? rawLocale[0] : (rawLocale ?? "");
 
   let href = rest.href ?? router.asPath;
   if (href.startsWith("http")) skipLocaleHandling = true;

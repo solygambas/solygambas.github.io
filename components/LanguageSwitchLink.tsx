@@ -19,17 +19,14 @@ const LanguageSwitchLink = ({ locale, href }: LanguageSwitchLinkProps) => {
       return;
     }
     const q = router.query[k];
-    pName = pName.replace(`[${k}]`, Array.isArray(q) ? q[0] : (q!));
+    pName = pName.replace(`[${k}]`, Array.isArray(q) ? q[0] : q!);
   });
   if (locale) {
     link = href ? `/${locale}${href}` : pName;
   }
 
   return (
-    <Link
-      href={link}
-      onClick={() => languageDetector.cache?.(locale)}
-    >
+    <Link href={link} onClick={() => languageDetector.cache?.(locale)}>
       <button className={styles.button}>{locale.toUpperCase()}</button>
     </Link>
   );

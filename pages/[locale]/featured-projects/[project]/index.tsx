@@ -56,10 +56,9 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
 const FeaturedProjectPage = ({ project }: { project: FeaturedProjectKey }) => {
   const { t } = useTranslation("common");
-  const data =
-    t(`featuredProjects.${featuredProjectKeys[project]}`, {
-      returnObjects: true,
-    }) as unknown as FeaturedProjectData;
+  const data = t(`featuredProjects.${featuredProjectKeys[project]}`, {
+    returnObjects: true,
+  }) as unknown as FeaturedProjectData;
   const { title, subtitle, paragraphs, url } = data;
 
   return (

@@ -27,7 +27,13 @@ const eslintConfig = defineConfig([
     },
   },
   {
-    ignores: [".*/**", "node_modules/**", "out/**", "public/**", "next-env.d.ts"],
+    ignores: [
+      ".*/**",
+      "node_modules/**",
+      "out/**",
+      "public/**",
+      "next-env.d.ts",
+    ],
   },
 ]);
 

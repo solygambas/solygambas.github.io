@@ -17,7 +17,7 @@ class MyDocument extends Document<DocumentProps> {
     const initialProps = await Document.getInitialProps(ctx);
     const rawLocale = Array.isArray(ctx.query.locale)
       ? ctx.query.locale[0]
-      : (ctx.query.locale);
+      : ctx.query.locale;
     const currentLocale = rawLocale ?? i18nextConfig.i18n.defaultLocale;
     return { ...initialProps, currentLocale };
   }
