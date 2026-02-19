@@ -97,6 +97,7 @@ export function generateStaticParams() {
 - **Type Check**: `npm run type-check` - validates TypeScript with strict mode
 - **Format**: `npm run format` - formats all files with Prettier
 - **Lint**: `npm run lint` - checks code, `npm run lint:fix` - auto-fixes lintable issues
+- **Stylelint**: `npm run stylelint` - checks styles (CSS), `npm run stylelint:fix` - auto-fixes style issues
 - **Validate**: `npm run validate` - runs the full validation pipeline (type-check + lint + build)
 - **Serve Built Site**: `npm start` (alias for `npx serve@latest out`) - serves the static export locally
 
@@ -107,9 +108,10 @@ This project enforces a strict "Fortress" workflow for any agent-operated change
 1. **Run formatting and quick fixes**:
    - `npm run format` — formats all files with Prettier
    - `npm run lint:fix` — auto-fix lintable issues
+   - `npm run stylelint:fix` — auto-fix stylelint issues (CSS)
 
 2. **Run the full validation pipeline (this is the Golden Rule)**:
-   - `npm run validate` — must succeed (this runs type-check, linting, and a production build)
+   - `npm run validate` — must succeed (this runs type-check, linting, stylelint when available, and a production build)
 
 3. **If `npm run validate` fails, do NOT mark the task complete**. Fix the issues and re-run until it passes.
 
