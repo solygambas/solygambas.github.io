@@ -20,7 +20,7 @@
   color: var(--foreground-alternate-color);
 }
 
-@media (min-width: var(--breakpoint-md)) {
+@media (width >= 768px) {
   .portfolioItem {
     padding: 0 var(--spacing-xl);
   }

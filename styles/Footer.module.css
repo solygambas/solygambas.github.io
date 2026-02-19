@@ -8,7 +8,7 @@
   margin-bottom: var(--spacing-xs);
 }
 
-@media (min-width: var(--breakpoint-md)) {
+@media (width >= 768px) {
   .footer span {
     display: inline-block;
     margin-right: var(--spacing-xs);

@@ -86,7 +86,7 @@
   margin-bottom: var(--spacing-xl);
 }
 
-@media (min-width: var(--breakpoint-md)) {
+@media (width >= 768px) {
   .hero {
     display: flex;
     flex-direction: row;
@@ -120,7 +120,7 @@
   }
 }
 
-@media (min-width: var(--breakpoint-lg)) {
+@media (width >= 992px) {
   .header {
     height: calc(var(--spacing-3xl) + var(--spacing-md));
     justify-content: start;
@@ -165,7 +165,7 @@
   }
 }
 
-@media (min-width: var(--breakpoint-xl)) {
+@media (width >= 1400px) {
   .main {
     padding: 0 var(--spacing-4xl);
   }
