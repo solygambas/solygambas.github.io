@@ -1,5 +1,6 @@
-import languageDetector from "../lib/languageDetector";
-import { useRouter } from "next/router";
+"use client";
+
+import { useParams, usePathname } from "next/navigation";
 import Link from "next/link";
 import styles from "../styles/LanguageSwitchLink.module.css";
 
@@ -9,24 +10,25 @@ interface LanguageSwitchLinkProps {
 }
 
 const LanguageSwitchLink = ({ locale, href }: LanguageSwitchLinkProps) => {
-  const router = useRouter();
+  const params = useParams();
+  const pathname = usePathname();
 
-  let link = href ?? router.asPath;
-  let pName = router.pathname;
-  Object.keys(router.query).forEach((k) => {
-    if (k === "locale") {
-      pName = pName.replace(`[${k}]`, locale);
-      return;
+  // Replace current locale in pathname with new locale
+  const currentLocale = params?.locale as string;
+  const newPathname = (pathname ?? "").replace(
+    `/${currentLocale}`,
+    `/${locale}`
+  );
+  const link = href ? `/${locale}${href}` : newPathname;
+
+  const handleClick = () => {
+    if (typeof window !== "undefined") {
+      localStorage.setItem("i18nextLng", locale);
     }
-    const q = router.query[k];
-    pName = pName.replace(`[${k}]`, Array.isArray(q) ? q[0] : q!);
-  });
-  if (locale) {
-    link = href ? `/${locale}${href}` : pName;
-  }
+  };
 
   return (
-    <Link href={link} onClick={() => languageDetector.cache?.(locale)}>
+    <Link href={link} onClick={handleClick}>
       <button className={styles.button}>{locale.toUpperCase()}</button>
     </Link>
   );

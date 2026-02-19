@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { useParams, usePathname } from "next/navigation";
+import type { Locale } from "../app/i18n/settings";
 
 interface LinkComponentProps {
   children: React.ReactNode;
@@ -13,25 +16,17 @@ const LinkComponent = ({
   skipLocaleHandling,
   ...rest
 }: LinkComponentProps) => {
-  const router = useRouter();
-  const rawLocale = rest.locale ?? router.query.locale;
-  const locale = Array.isArray(rawLocale) ? rawLocale[0] : (rawLocale ?? "");
+  const params = useParams();
+  const pathname = usePathname();
+  const locale = (rest.locale ?? params?.locale ?? "") as Locale;
 
-  let href = rest.href ?? router.asPath;
-  if (href.startsWith("http")) skipLocaleHandling = true;
-  if (locale && !skipLocaleHandling) {
-    href = href
-      ? `/${locale}${href}`
-      : router.pathname.replace("[locale]", locale);
+  let href = rest.href ?? pathname ?? "";
+  if (href?.startsWith("http")) skipLocaleHandling = true;
+  if (locale && !skipLocaleHandling && href) {
+    href = href ? `/${locale}${href}` : (pathname ?? "");
   }
 
-  return (
-    <>
-      <Link href={href}>
-        <a {...rest}>{children}</a>
-      </Link>
-    </>
-  );
+  return <Link href={href}>{children}</Link>;
 };
 
 export default LinkComponent;

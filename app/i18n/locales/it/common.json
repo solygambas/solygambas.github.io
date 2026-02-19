@@ -1,0 +1,99 @@
+{
+  "title": "Solygambas",
+  "description": "Sviluppatore web Full-stack freelance: Node.js, React, React Native, JavaScript, WordPress, PHP, Python. Solo telelavoro.",
+  "hero": {
+    "name": "Ciao, sono Joachim",
+    "experience": "Realizzo siti web da quasi 25 anni.",
+    "alt": "Uomo con i capelli scuri e gli occhi verdi sorridenti",
+    "brand": {
+      "social": "Guarda il mio profilo {{brand}}",
+      "alt": "Logo di {{brand}}"
+    }
+  },
+  "caseStudies": {
+    "title": "Casi di studio",
+    "adevinta": {
+      "title": "Adevinta",
+      "subtitle": "Creare un sistema di design europeo",
+      "paragraphs": [
+        "Come tecnologo creativo, architetto tecnico e sviluppatore principale, sono stato il primo sviluppatore ad unirmi al team di design UI/UX di 25 persone in leboncoin. Il mio ruolo consisteva nell'auditare e migliorare il sistema di design, collaborando strettamente con un designer dedicato.",
+        "Dopo un anno di iterazioni per migliorare i nostri processi, abbiamo avuto l'opportunità di espandere il nostro sistema di design in tutta Europa, in collaborazione con altre piattaforme del gruppo Adevinta: Kleinanzeigen in Germania, Milanuncios in Spagna, Subito in Italia e Marktplaats/2dehands nel Benelux. Insieme a colleghi di Spagna e Germania, abbiamo formato un team di 20 persone completamente dedicato al sistema di design per le piattaforme web, iOS native e Android native.",
+        "I nostri sforzi facevano parte di un'iniziativa più ampia destinata a unificare la nostra esperienza e facilitare la transizione da un'identità di marca a un'altra. A tal fine, ho sviluppato una soluzione in Figma e ho stabilito una pipeline per automatizzare la consegna di icone e token di colori direttamente da Figma agli sviluppatori.",
+        "Partendo con un solo designer e un piccolo team, abbiamo raggiunto progressi notevoli in due anni, con un impatto a livello di gruppo. Collaborare in un ambiente internazionale è stato tanto arricchente quanto stimolante. Ho apprezzato particolarmente fornire strumenti ai designer e agli sviluppatori affinché potessero sfruttare i nostri componenti e sviluppare interfacce più rapidamente."
+      ]
+    },
+    "credit-agricole-group-infrastructure-platform": {
+      "title": "Crédit Agricole Group Infrastructure Platform",
+      "subtitle": "Innovare nel settore bancario con il cloud",
+      "paragraphs": [
+        "Come sviluppatore full-stack principale ed esperto in DevOps cloud, ho guidato un team incaricato di sviluppare un portale interno per Crédit Agricole Group Infrastructure Platform. Questo portale offriva servizi di cloud computing on-demand a tutti gli sviluppatori del gruppo, permettendo loro di creare macchine virtuali con facilità.",
+        "La nostra principale sfida è stata gestire efficientemente la scalabilità del portale. In soli 6 mesi, siamo passati dall'ospitare 1.000 a 15.000 server virtuali. Collaborare con i principali fornitori di cloud come Google Cloud, Microsoft Azure e Amazon Web Services è stata un'esperienza unica. Mi ha anche permesso di comprendere meglio il futuro dell'infrastruttura tecnica nel settore bancario, nonostante le limitazioni imposte dai sistemi legacy che hanno arricchito la mia comprensione dei principi architettonici.",
+        "Data l'esperienza dei miei colleghi nel backend, mi sono concentrato sull'implementazione di un sistema di design. Questo sistema permetteva agli sviluppatori backend di creare interfacce per il portale facilmente, anche con conoscenze minime di CSS e accessibilità. Inoltre, ho guidato il team nell'apprendimento della tecnologia frontend per garantire un'integrazione entro i tempi stabiliti.",
+        "Infine, dato che Crédit Agricole dà grande importanza al suo impatto sociale, ho avuto l'opportunità di fare da mentore a due apprendisti talentuosi. Guidarli nel loro percorso per diventare professionisti del DevOps è stato molto gratificante. Il loro entusiasmo e curiosità non solo hanno permesso loro di sviluppare le proprie competenze, ma hanno anche arricchito la mia pratica professionale."
+      ]
+    },
+    "ho36-hostels": {
+      "title": "HO36 Hostels",
+      "subtitle": "Ottimizzare l'esperienza utente in un sito di prenotazioni alberghiere",
+      "paragraphs": [
+        "Durante l'ultimo decennio, mi sono specializzato in progetti su WordPress, collaborando frequentemente con clienti che cercano competenze tecniche per allineare i loro obiettivi con le loro limitazioni di budget.",
+        "Un progetto significativo è stato collaborare con HO36 Hostels per la ristrutturazione del loro sito web. Sebbene WordPress permetta agli utenti autonomi di svolgere molte attività da soli, il mio ruolo era risolvere problemi complessi per il team e aggiungere un tocco professionale per migliorare l'esperienza dell'utente.",
+        "Un altro aspetto cruciale è stata l'integrazione del sistema di prenotazioni Mews. Questa integrazione ha semplificato il processo di prenotazione, permettendo a HO36 Hostels, come gruppo alberghiero indipendente, di evitare le alte commissioni delle piattaforme di prenotazione di terze parti.",
+        "Lavorando a stretto contatto con il team marketing, ho tenuto conto dei loro obiettivi commerciali e sono riuscito a implementare soluzioni entro tempi stretti."
+      ]
+    }
+  },
+  "featuredProjects": {
+    "title": "Progetti in evidenza",
+    "on-business-plan": {
+      "title": "On Business Plan",
+      "subtitle": "Supportare gli imprenditori digitali",
+      "paragraphs": [
+        "Nel 2012, mentre lavoravo come investitore nell'economia digitale, ho ricevuto numerose richieste di piani aziendali. Questo mi ha portato a iniziare a pubblicare consigli tramite un blog e successivamente a vendere modelli di piani aziendali. Con il tempo, ho ampliato la mia offerta per includere una collezione di ebook, video e podcast che coprono modelli di business digitali, creazione di siti web con WordPress e altri argomenti legati all'imprenditoria.",
+        "Questi anni sono stati incredibilmente arricchenti. Ho condiviso le mie esperienze nel campo digitale e ho imparato molto dalle mie interazioni con i clienti. Ho sviluppato la mia attività come consulente e mentore per imprenditori e startup, concentrandomi su piattaforme digitali, applicazioni per la ristorazione e i viaggi, e siti web.",
+        "Curiosamente, questo ruolo di consulente ha aumentato la domanda delle mie competenze tecniche. Gli imprenditori principianti, con difficoltà a fidarsi delle agenzie o degli sviluppatori con i loro risparmi, hanno iniziato a rivolgersi a me per la creazione dei loro siti web. Questo mi ha anche aperto le porte per collaborazioni a tempo pieno con grandi aziende come Adevinta (leboncoin) e Crédit Agricole Group Infrastructure Platform.",
+        "On Business Plan è ora una comunità dinamica su YouTube e un blog in inglese aggiornato due volte a settimana, dove condivido le mie analisi e i miei consigli per giovani sviluppatori e imprenditori principianti."
+      ],
+      "url": "https://www.onbusinessplan.com/"
+    },
+    "projectin": {
+      "title": "ProjectIn",
+      "subtitle": "Aiutare i freelance a gestire meglio il loro tempo",
+      "paragraphs": [
+        "Come freelance, gestire efficacemente il tuo tempo tra vari progetti può essere una sfida. Spesso ti trovi a progredire su un compito mentre ti frustri per doverne fermare un altro. Per anni, ho tenuto un registro manuale delle mie ore di lavoro, annotando come trascorrevo ogni giorno.",
+        "ProjectIn è nato dalla necessità di semplificare questo processo. L'applicazione consente di registrare le sessioni di lavoro per ogni progetto e fornisce metriche settimanali e mensili per aiutarti a capire come trascorri il tuo tempo.",
+        "Curiosamente, ProjectIn ha avuto diversi inizi falliti. Il mio primo tentativo è stato un progetto chiamato Revery, costruito con Gatsby e Material UI. Nonostante fosse ben progettato, l'applicazione non si allineava esattamente con i miei metodi di monitoraggio, quindi ho continuato a utilizzare il mio vecchio sistema.",
+        "Il secondo tentativo ha comportato la creazione di un'applicazione con Flutter, che stavo imparando in quel momento. Sebbene ci sia riuscito, ancora non soddisfaceva perfettamente le mie esigenze.",
+        "Il terzo tentativo è stato quello giusto. Ho utilizzato HTML, CSS e JavaScript puro, insieme all'archiviazione locale per evitare inizialmente la necessità di un database. Ho riprodotto il mio precedente metodo di annotazione, il che ha portato a uno strumento che ho iniziato a usare quotidianamente.",
+        "Col tempo, ho migliorato ProjectIn con la gestione degli utenti e un database in tempo reale. Ora uso ProjectIn quotidianamente, e il tempo in cui tenevo manualmente traccia delle mie ore sembra molto lontano."
+      ],
+      "url": "https://projectin.netlify.app/"
+    },
+    "watchello": {
+      "title": "Watchello",
+      "subtitle": "Il mio percorso dall'HTML al Machine Learning",
+      "paragraphs": [
+        "Watchello è iniziato come un semplice progetto HTML e CSS progettato per imparare a usare le griglie, flexbox e transizioni. Con il tempo, ho integrato un'API di database di film per iniziare a ottenere informazioni sui film.",
+        "In quel momento, tenevo un registro dei film che volevo vedere e di quelli che avevo già visto usando Evernote. Questo mi ha ispirato a trasformare il progetto iniziale in una vera applicazione, chiamata Watchello.",
+        "Ho implementato la gestione degli utenti e un database in tempo reale, il che ha permesso agli utenti di cercare film, aggiungerli alla loro lista di film da vedere e tenere traccia della loro cronologia di visione.",
+        "Nel corso dei mesi, ho continuato ad aggiungere nuove funzionalità. Utilizzando la mia esperienza in apprendimento automatico, ho sviluppato un algoritmo di raccomandazione. Ora, ogni volta che gli utenti cercano un film, l'applicazione mostra una percentuale di compatibilità basata sulla loro cronologia di visione.",
+        "Questo progetto esemplifica il processo di apprendimento che si può sperimentare costruendo i propri strumenti. Iniziando con un progetto semplice senza un obiettivo chiaro, vedi gradualmente opportunità di miglioramento ed espansione. Così, il progetto evolve man mano che migliori come sviluppatore."
+      ],
+      "url": "https://watchello.netlify.app/"
+    }
+  },
+  "backButton": {
+    "text": "Indietro"
+  },
+  "visitButton": {
+    "text": "Visita {{website}}"
+  },
+  "contact": {
+    "title": "Contattami",
+    "description": "Sentiti libero di contattarmi per discutere del tuo progetto!",
+    "name": "Nome",
+    "email": "Email",
+    "message": "Messaggio",
+    "submit": "Invia"
+  }
+}

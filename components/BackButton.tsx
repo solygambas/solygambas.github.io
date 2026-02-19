@@ -1,10 +1,12 @@
-import { useRouter } from "next/router";
-import { useTranslation } from "next-i18next";
+"use client";
+
+import { useRouter } from "next/navigation";
+import { useT } from "../app/i18n/client";
 import styles from "../styles/BackButton.module.css";
 
 function BackButton() {
   const router = useRouter();
-  const { t } = useTranslation("common");
+  const { t } = useT("common");
   return (
     <button className={styles.button} onClick={() => router.back()}>
       {t("backButton.text")}

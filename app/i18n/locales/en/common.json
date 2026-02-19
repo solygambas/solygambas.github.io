@@ -1,0 +1,99 @@
+{
+  "title": "Solygambas",
+  "description": "Remote Full-stack Developer: Node.js, React, React Native, JavaScript, WordPress, PHP, Python. Let's create together!",
+  "hero": {
+    "name": "Hi, I’m Joachim",
+    "experience": "I’ve been building websites for almost 25 years",
+    "alt": "Man with dark hair and green eyes smiling",
+    "brand": {
+      "social": "Check my {{brand}} profile",
+      "alt": "{{brand}} logo"
+    }
+  },
+  "caseStudies": {
+    "title": "Case Studies",
+    "adevinta": {
+      "title": "Adevinta",
+      "subtitle": "Scaling Design Systems Across Europe",
+      "paragraphs": [
+        "As a creative technologist, technical architect, and lead developer, I was the first developer to join the design team of 25 at leboncoin marketplace. My role involved auditing and enhancing the design system, collaborating closely with a dedicated designer.",
+        "After a year of refining our processes, we seized the opportunity to expand our design system across Europe in collaboration with other Adevinta marketplaces—Kleinanzeigen in Germany, Milanuncios in Spain, Subito in Italy, and Marktplaats/2dehands in Benelux. Together with colleagues from Spain and Germany, we formed a specialized team of 20 members focused solely on the design system for web, native iOS, and native Android platforms.",
+        "Our efforts were part of a broader initiative to consolidate our expertise and facilitate seamless brand transitions. To achieve this, I developed a Figma solution and implemented a pipeline to automate the delivery of icons and color tokens directly from Figma to developers.",
+        "Starting with just a designer and a small team, we made remarkable progress in two years, impacting our entire group. Collaborating in an international setting was both rewarding and challenging. I particularly enjoyed empowering designers and developers to leverage our components for faster interface development."
+      ]
+    },
+    "credit-agricole-group-infrastructure-platform": {
+      "title": "Crédit Agricole Group Infrastructure Platform",
+      "subtitle": "Driving Cloud Innovation",
+      "paragraphs": [
+        "In my role as a full-stack lead developer and DevOps cloud expert, I spearheaded a squad tasked with developing an internal portal at Crédit Agricole Group Infrastructure Platform. This portal offered on-demand cloud computing services to all developers within the organization, allowing them to create virtual machines seamlessly.",
+        "Our primary challenge was scaling the portal efficiently. Within just 6 months, we scaled from hosting 1,000 to 15,000 virtual servers. Collaborating with major cloud providers like Google Cloud, Microsoft Azure, and Amazon Web Services was exhilarating. It also provided insight into the future of technical infrastructure in the banking sector, despite encountering legacy constraints that enriched my understanding of architectural principles.",
+        "Given the backend expertise of my teammates, I focused on establishing a design system. This system empowered backend developers to create portal interfaces effortlessly, even with minimal CSS and accessibility knowledge. Additionally, I led the frontend stack onboarding process to ensure smooth integration.",
+        "Furthermore, as Crédit Agricole prioritizes its social impact, I had the privilege of mentoring two talented apprentices. Guiding them through the journey of becoming DevOps professionals was enlightening. Their enthusiasm and inquisitiveness not only enhanced their skills but also enriched my own learning experience."
+      ]
+    },
+    "ho36-hostels": {
+      "title": "HO36 Hostels",
+      "subtitle": "Enhancing User Experience and Booking Integration",
+      "paragraphs": [
+        "Over the past decade, I've specialized in WordPress projects, often collaborating with first-time clients to align their goals with their budget constraints.",
+        "One notable project was HO36 Hostels, where I contributed to their website redesign. While WordPress allows autonomous users to achieve much independently, my role was to address lingering issues and add professional touches that enhance visitor experience.",
+        "Another crucial aspect was integrating the Mews booking system. This integration streamlined the reservation process, allowing HO36 Hostels, as an independent accommodation group, to avoid hefty commissions from third-party booking platforms.",
+        "Collaborating closely with the marketing team, I gained insights into their business objectives and successfully implemented solutions within tight deadlines."
+      ]
+    }
+  },
+  "featuredProjects": {
+    "title": "Featured Projects",
+    "on-business-plan": {
+      "title": "On Business Plan",
+      "subtitle": "Empowering Digital Entrepreneurs",
+      "paragraphs": [
+        "In 2012, while working as an investor in the digital economy, I received numerous requests for business plans. This inspired me to start posting blog content and eventually sell business plan templates. Over time, I expanded to offer a collection of ebooks, videos, and podcasts covering digital business models, WordPress website creation, and other entrepreneurship-related topics.",
+        "These years were incredibly enriching. I shared insights from my digital ventures and engaged in enlightening exchanges with clients. I thrived as a consultant and mentor for entrepreneurs and startups, focusing on digital platforms, food & travel apps, and websites.",
+        "Interestingly, this consulting practice increased the demand for my technical skills. First-time entrepreneurs, finding it difficult to rely on agencies or developers, began trusting me to build their websites. This also opened doors for full-time contracts with larger companies like Adevinta (leboncoin) and Crédit Agricole Group Infrastructure Platform.",
+        "On Business Plan now boasts a vibrant community on YouTube and a blog in English updated twice weekly, where I share my business insights and tips for young developers and first-time entrepreneurs."
+      ],
+      "url": "https://www.onbusinessplan.com/"
+    },
+    "projectin": {
+      "title": "ProjectIn",
+      "subtitle": "Mastering Time Management for Freelancers",
+      "paragraphs": [
+        "As a freelancer, managing your time effectively across multiple projects can be challenging. You often find yourself making progress on one task while feeling frustrated about pausing another. For years, I tracked my working hours manually, noting down how I spent each day.",
+        "ProjectIn was born out of the need to streamline this process. The app allows you to log work sessions for each project and provides weekly and monthly metrics to help you understand how your time is spent.",
+        "Interestingly, ProjectIn had several false starts. My first attempt was a project called Revery, built with Gatsby and Material UI. Despite being well-designed, it didn't align with my previous manual time-tracking methods, so I continued using my old system.",
+        "The second attempt involved creating an app with Flutter, which I was learning at the time. Although I got it working, it still didn't meet my needs perfectly.",
+        "The third attempt was successful. I used basic HTML, CSS, and vanilla JavaScript, along with local storage to avoid needing a database initially. I mimicked my old note-taking method, resulting in a tool that I began using daily.",
+        "Over time, I improved ProjectIn with user management and a real-time database. Now, I rely on ProjectIn every day, and I've left behind the days of manually recording my work activities."
+      ],
+      "url": "https://projectin.netlify.app/"
+    },
+    "watchello": {
+      "title": "Watchello",
+      "subtitle": "My Path from HTML to Machine Learning",
+      "paragraphs": [
+        "Watchello began as a small HTML and CSS project designed to practice working with grids, flexbox, and transitions. Eventually, I integrated a movie database API to fetch real movie data.",
+        "At the time, I kept track of movies I wanted to watch and had watched using Evernote. This inspired me to transform the small movie app into a standalone application called Watchello.",
+        "I implemented user management and a real-time database, enabling users to search for movies, add them to their watchlist, and track their viewing history.",
+        "Over the months, I continuously added new features. Leveraging my machine learning experience, I developed a recommendation algorithm. Now, whenever users search for a movie, the app displays a compatibility percentage based on their viewing history.",
+        "This project exemplifies the learning journey that comes from building your own tools. Starting small without a clear end goal, you gradually see opportunities to improve and expand. As a result, the project evolves alongside your growth as a developer."
+      ],
+      "url": "https://watchello.netlify.app/"
+    }
+  },
+  "backButton": {
+    "text": "Back"
+  },
+  "visitButton": {
+    "text": "Visit {{website}}"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "description": "Feel free to reach out to discuss your project!",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "submit": "Send"
+  }
+}

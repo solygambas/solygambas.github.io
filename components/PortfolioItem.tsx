@@ -1,6 +1,7 @@
-import Head from "next/head";
+"use client";
+
 import Image from "next/image";
-import { useTranslation } from "next-i18next";
+import { useT } from "../app/i18n/client";
 import BackButton from "./BackButton";
 import styles from "../styles/PortfolioItem.module.css";
 
@@ -19,12 +20,9 @@ function PortfolioItem({
   alt,
   url,
 }: PortfolioItemProps) {
-  const { t } = useTranslation("common");
+  const { t } = useT("common");
   return (
     <div className={styles.portfolioItem}>
-      <Head>
-        <title>{title}</title>
-      </Head>
       <Image src={src} alt={alt} width={300} height={200} />
       <h3>{title}</h3>
       {paragraphs.map((paragraph, index) => (

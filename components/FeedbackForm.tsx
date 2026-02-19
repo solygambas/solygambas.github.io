@@ -1,8 +1,10 @@
-import { useTranslation } from "next-i18next";
+"use client";
+
+import { useT } from "../app/i18n/client";
 import styles from "../styles/FeedbackForm.module.css";
 
 function FeedbackFrom() {
-  const { t } = useTranslation("common");
+  const { t } = useT("common");
   return (
     <form
       className={styles.contactForm}

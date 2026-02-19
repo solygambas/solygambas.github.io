@@ -1,22 +1,21 @@
-import { useTranslation } from "next-i18next";
-import { useRouter } from "next/router";
+"use client";
+
+import { useParams } from "next/navigation";
 import LanguageSwitchLink from "./LanguageSwitchLink";
-import i18nextConfig from "../next-i18next.config";
+import { locales } from "../app/i18n/settings";
+import { useT } from "../app/i18n/client";
 import styles from "../styles/Footer.module.css";
 
 export const Footer = () => {
-  const router = useRouter();
-  const { t } = useTranslation("footer");
-  const currentLocale =
-    (Array.isArray(router.query.locale)
-      ? router.query.locale[0]
-      : router.query.locale) ?? i18nextConfig.i18n.defaultLocale;
+  const params = useParams();
+  const { t } = useT("footer");
+  const currentLocale = params?.locale as string;
 
   return (
     <footer>
       <p className={styles.footer}>
         <span>{t("change-locale")}</span>{" "}
-        {i18nextConfig.i18n.locales.map((locale) => {
+        {locales.map((locale) => {
           if (locale === currentLocale) return null;
           return <LanguageSwitchLink locale={locale} key={locale} />;
         })}
