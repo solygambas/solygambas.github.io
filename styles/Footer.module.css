@@ -8,7 +8,7 @@
   margin-bottom: var(--spacing-xs);
 }
 
-.footer div {
+.footer nav {
   display: inline-flex;
   justify-content: center;
   gap: var(--spacing-xs);

@@ -13,15 +13,15 @@ export const Footer = () => {
 
   return (
     <footer>
-      <p className={styles.footer}>
+      <div className={styles.footer}>
         <span>{t("change-locale")}</span>{" "}
-        <div>
+        <nav>
           {locales.map((locale) => {
             if (locale === currentLocale) return null;
             return <LanguageSwitchLink locale={locale} key={locale} />;
           })}
-        </div>
-      </p>
+        </nav>
+      </div>
     </footer>
   );
 };
