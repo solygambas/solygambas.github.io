@@ -1,6 +1,10 @@
 .footer {
   text-align: center;
-  margin: var(--spacing-xl) 0;
+  margin: var(--spacing-xl);
+  display: flex;
+  gap: var(--spacing-2xs);
+  justify-content: center;
+  align-items: center;
 }
 
 .footer span {
