@@ -1,15 +1,17 @@
 .footer {
   text-align: center;
   margin: var(--spacing-xl);
-  display: flex;
-  gap: var(--spacing-2xs);
-  justify-content: center;
-  align-items: center;
 }
 
 .footer span {
   display: block;
   margin-bottom: var(--spacing-xs);
+}
+
+.footer div {
+  display: inline-flex;
+  justify-content: center;
+  gap: var(--spacing-xs);
 }
 
 @media (width >= 768px) {
