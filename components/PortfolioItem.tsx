@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useT } from "../app/i18n/client";
-import BackButton from "./BackButton";
+import Button from "./Button";
 import styles from "../styles/PortfolioItem.module.css";
 
 interface PortfolioItemProps {
@@ -35,7 +35,7 @@ function PortfolioItem({
           </a>
         </p>
       )}
-      <BackButton />
+      <Button variant="back">{t("backButton.text")}</Button>
     </div>
   );
 }

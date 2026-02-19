@@ -1,6 +1,7 @@
 "use client";
 
 import { useT } from "../app/i18n/client";
+import Button from "./Button";
 import styles from "../styles/FeedbackForm.module.css";
 
 function FeedbackFrom() {
@@ -24,9 +25,9 @@ function FeedbackFrom() {
         <label htmlFor="message">{t("contact.message")}</label>
         <textarea id="message" name="message" rows={4} required></textarea>
       </div>
-      <button className={`${styles.submitButton} uiButton`} type="submit">
+      <Button variant="submit" type="submit">
         {t("contact.submit")}
-      </button>
+      </Button>
     </form>
   );
 }

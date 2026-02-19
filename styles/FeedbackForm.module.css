@@ -26,8 +26,3 @@
   font-size: var(--font-size-sm);
   font-family: inherit;
 }
-
-.submitButton {
-  background-color: var(--background-color);
-  border: var(--border-width-thin) solid var(--border-color);
-}

@@ -2,7 +2,7 @@
 
 import { useParams, usePathname } from "next/navigation";
 import Link from "next/link";
-import styles from "../styles/LanguageSwitchLink.module.css";
+import Button from "./Button";
 
 interface LanguageSwitchLinkProps {
   locale: string;
@@ -29,9 +29,7 @@ const LanguageSwitchLink = ({ locale, href }: LanguageSwitchLinkProps) => {
 
   return (
     <Link href={link} onClick={handleClick}>
-      <button className={`${styles.button} uiButton`}>
-        {locale.toUpperCase()}
-      </button>
+      <Button variant="language">{locale.toUpperCase()}</Button>
     </Link>
   );
 };

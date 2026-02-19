@@ -1,0 +1,43 @@
+.button {
+  background-color: var(--background-alternate-color);
+  border: none;
+  border-radius: var(--radius-sm);
+  color: var(--foreground-color);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  font-size: var(--font-size-sm);
+  padding: var(--spacing-md) var(--spacing-lg);
+  text-align: center;
+  text-decoration: none;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--foreground-alternate-color);
+  outline-offset: 2px;
+}
+
+.back {
+  margin-block: var(--spacing-2xl);
+}
+
+.submit {
+  background-color: var(--background-color);
+  border: var(--border-width-thin) solid var(--border-color);
+}
+
+.language {
+  font-size: var(--font-size-xs);
+  padding: var(--spacing-2xs) var(--spacing-xs);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button {
+    transition: none;
+  }
+}
