@@ -1,7 +1,6 @@
 "use client";
 
-import { useParams, usePathname } from "next/navigation";
-import Link from "next/link";
+import { useParams, usePathname, useRouter } from "next/navigation";
 import Button from "./Button";
 
 interface LanguageSwitchLinkProps {
@@ -12,6 +11,7 @@ interface LanguageSwitchLinkProps {
 const LanguageSwitchLink = ({ locale, href }: LanguageSwitchLinkProps) => {
   const params = useParams();
   const pathname = usePathname();
+  const router = useRouter();
 
   // Replace current locale in pathname with new locale
   const currentLocale = params?.locale as string;
@@ -25,12 +25,13 @@ const LanguageSwitchLink = ({ locale, href }: LanguageSwitchLinkProps) => {
     if (typeof window !== "undefined") {
       localStorage.setItem("i18nextLng", locale);
     }
+    router.push(link);
   };
 
   return (
-    <Link href={link} onClick={handleClick}>
-      <Button variant="language">{locale.toUpperCase()}</Button>
-    </Link>
+    <Button variant="language" onClick={handleClick}>
+      {locale.toUpperCase()}
+    </Button>
   );
 };
 
