@@ -2,9 +2,9 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  gap: 1rem;
-  max-width: 730px;
-  padding: 0 1rem;
+  gap: var(--spacing-md);
+  max-width: var(--content-max-width);
+  padding: 0 var(--spacing-md);
 }
 
 .portfolioItem p {
@@ -20,8 +20,8 @@
   color: var(--foreground-alternate-color);
 }
 
-@media (min-width: 768px) {
+@media (min-width: var(--breakpoint-md)) {
   .portfolioItem {
-    padding: 0 2rem;
+    padding: 0 var(--spacing-xl);
   }
 }

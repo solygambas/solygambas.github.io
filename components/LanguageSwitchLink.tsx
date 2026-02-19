@@ -29,7 +29,9 @@ const LanguageSwitchLink = ({ locale, href }: LanguageSwitchLinkProps) => {
 
   return (
     <Link href={link} onClick={handleClick}>
-      <button className={styles.button}>{locale.toUpperCase()}</button>
+      <button className={`${styles.button} uiButton`}>
+        {locale.toUpperCase()}
+      </button>
     </Link>
   );
 };

@@ -1,17 +1,17 @@
 .footer {
   text-align: center;
-  margin: 2rem 0;
+  margin: var(--spacing-xl) 0;
 }
 
 .footer span {
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--spacing-xs);
 }
 
-@media (min-width: 768px) {
+@media (min-width: var(--breakpoint-md)) {
   .footer span {
     display: inline-block;
-    margin-right: 0.5rem;
+    margin-right: var(--spacing-xs);
     margin-bottom: 0;
   }
 }

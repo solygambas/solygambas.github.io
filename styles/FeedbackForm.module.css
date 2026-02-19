@@ -1,9 +1,9 @@
 .contactForm {
-  max-width: 600px;
+  max-width: var(--content-max-width-narrow);
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: var(--spacing-md);
 }
 
 .formGroup {
@@ -12,29 +12,22 @@
 }
 
 .formGroup label {
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--spacing-xs);
   font-weight: bold;
 }
 
 .formGroup input,
 .formGroup textarea {
-  padding: 0.5rem;
+  padding: var(--spacing-xs);
   background-color: var(--background-color);
   color: var(--foreground-color);
-  border: 1px solid var(--border-color);
-  border-radius: var(--border-radius);
-  font-size: 1rem;
+  border: var(--border-width-thin) solid var(--border-color);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-sm);
   font-family: inherit;
 }
 
-.contactForm button {
-  padding: 1rem 2rem;
+.submitButton {
   background-color: var(--background-color);
-  color: var(--foreground-color);
-  font-family: inherit;
-  border: none;
-  border-radius: var(--border-radius);
-  cursor: pointer;
-  font-size: 1rem;
-  font-family: inherit;
+  border: var(--border-width-thin) solid var(--border-color);
 }

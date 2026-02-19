@@ -1,8 +1,4 @@
 .button {
-  cursor: pointer;
-  padding: 0.25rem 0.5rem;
-  background-color: var(--background-alternate-color);
-  color: var(--foreground-color);
-  border: none;
-  font-family: inherit;
+  font-size: var(--font-size-xs);
+  padding: var(--spacing-2xs) var(--spacing-xs);
 }
