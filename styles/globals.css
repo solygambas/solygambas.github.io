@@ -1,9 +1,9 @@
 :root {
-  --foreground-color: #fff;
-  --foreground-alternate-color: #e5e3e7;
-  --background-color: #0d0d0d;
-  --background-alternate-color: #0f593e;
-  --border-color: #bdbf6f;
+  --foreground-color: #e8f2f0;
+  --foreground-alternate-color: #a9c2bc;
+  --background-color: #041619;
+  --background-alternate-color: #0b2625;
+  --border-color: rgb(255 255 255 / 5%);
   --border-width-thin: 1px;
   --border-width-thick: 5px;
   --radius-sm: 4px;
