@@ -15,10 +15,12 @@ export const Footer = () => {
     <footer>
       <p className={styles.footer}>
         <span>{t("change-locale")}</span>{" "}
-        {locales.map((locale) => {
-          if (locale === currentLocale) return null;
-          return <LanguageSwitchLink locale={locale} key={locale} />;
-        })}
+        <div>
+          {locales.map((locale) => {
+            if (locale === currentLocale) return null;
+            return <LanguageSwitchLink locale={locale} key={locale} />;
+          })}
+        </div>
       </p>
     </footer>
   );
