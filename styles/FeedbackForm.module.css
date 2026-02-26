@@ -1,3 +1,7 @@
+/* ═══════════════════════════════════════════════════
+   FORM LAYOUT
+   ═══════════════════════════════════════════════════ */
+
 .contactForm {
   max-width: var(--content-max-width-narrow);
   margin: 0 auto;
@@ -13,16 +17,53 @@
 
 .formGroup label {
   margin-bottom: var(--spacing-xs);
-  font-weight: bold;
+  font-weight: 600;
+  font-size: var(--font-size-xs);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--foreground-alternate-color);
+  transition: color var(--duration-normal) ease;
+}
+
+.formGroup:focus-within label {
+  color: var(--accent-color);
 }
 
 .formGroup input,
 .formGroup textarea {
-  padding: var(--spacing-xs);
+  padding: var(--spacing-sm) var(--spacing-md);
   background-color: var(--background-color);
   color: var(--foreground-color);
   border: var(--border-width-thin) solid var(--border-color);
   border-radius: var(--radius-sm);
   font-size: var(--font-size-sm);
   font-family: inherit;
+  transition:
+    border-color var(--duration-normal) ease,
+    box-shadow var(--duration-normal) ease;
+  outline: none;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px var(--accent-color-muted);
+}
+
+.formGroup textarea {
+  resize: vertical;
+  min-height: 7rem;
+  line-height: 1.6;
+}
+
+/* ═══════════════════════════════════════════════════
+   REDUCED MOTION
+   ═══════════════════════════════════════════════════ */
+
+@media (prefers-reduced-motion: reduce) {
+  .formGroup label,
+  .formGroup input,
+  .formGroup textarea {
+    transition: none;
+  }
 }

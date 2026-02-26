@@ -40,8 +40,8 @@ export default async function HomePage({
       <div className={styles.main}>
         <section className={styles.hero}>
           <div className={styles.heroText}>
-            <p>{t("hero.name")}</p>
-            <h2>{t("hero.experience")}</h2>
+            <p className={styles.heroName}>{t("hero.name")}</p>
+            <h2 className={styles.heroTagline}>{t("hero.experience")}</h2>
             <ul className={styles.socialLinks}>
               <SocialMediaIcon
                 title={t("hero.brand.social", { brand: "LinkedIn" })}

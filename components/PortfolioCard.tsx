@@ -11,9 +11,11 @@ interface PortfolioCardProps {
 
 const PortfolioCard = ({ title, subtitle, link, src }: PortfolioCardProps) => {
   return (
-    <div>
-      <Link href={link}>
-        <Image src={src} alt={title} width={300} height={200} />
+    <div className={styles.card}>
+      <Link href={link} className={styles.cardLink}>
+        <div className={styles.cardMedia}>
+          <Image src={src} alt={title} width={300} height={200} />
+        </div>
         <div className={styles.portfolioCard}>
           <h3>{title}</h3>
           <p>{subtitle}</p>

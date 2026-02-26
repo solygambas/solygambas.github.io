@@ -1,7 +1,71 @@
+/* ═══════════════════════════════════════════════════
+   KEYFRAMES
+   ═══════════════════════════════════════════════════ */
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scale-reveal {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes glow-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 transparent;
+  }
+
+  50% {
+    box-shadow: var(--shadow-glow);
+  }
+}
+
+@keyframes accent-line-grow {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* ═══════════════════════════════════════════════════
+   LAYOUT SHELLS
+   ═══════════════════════════════════════════════════ */
+
 .content {
   min-height: 100vh;
 }
 
+/* ── Header ────────────────────────────────────────── */
 .header {
   background-color: var(--background-alternate-color);
   height: var(--spacing-3xl);
@@ -9,6 +73,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: fade-in var(--duration-slow) ease both;
 }
 
 .header h1 {
@@ -16,9 +81,14 @@
   letter-spacing: 0.05em;
 }
 
+/* ── Main ──────────────────────────────────────────── */
 .main {
   padding: 0 var(--spacing-xl);
 }
+
+/* ═══════════════════════════════════════════════════
+   HERO SECTION
+   ═══════════════════════════════════════════════════ */
 
 .hero {
   display: flex;
@@ -29,37 +99,85 @@
   gap: var(--spacing-md);
 }
 
-.hero h2 {
+/* ── Hero text block ───────────────────────────────── */
+
+.heroName {
+  animation: slide-up var(--duration-slow) ease calc(var(--duration-fast) * 1)
+    both;
+  background: linear-gradient(
+    135deg,
+    var(--foreground-color) 0%,
+    var(--accent-color) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  margin-bottom: var(--spacing-xs);
+}
+
+.heroTagline {
+  animation: slide-up var(--duration-slow) ease calc(var(--duration-fast) * 2)
+    both;
   font-size: var(--font-size-lg);
   color: var(--foreground-alternate-color);
 }
 
-.hero p {
-  font-size: var(--font-size-sm);
-}
-
-.hero ul {
+.socialLinks {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(4, minmax(75px, 1fr));
   justify-items: center;
   margin-top: var(--spacing-lg);
   gap: var(--spacing-lg);
+  animation: slide-up var(--duration-slow) ease calc(var(--duration-fast) * 3)
+    both;
 }
 
+.socialLinks li a {
+  display: inline-flex;
+  border-radius: var(--radius-sm);
+  transition:
+    transform var(--duration-normal) ease,
+    filter var(--duration-normal) ease;
+}
+
+.socialLinks li a:hover {
+  transform: scale(1.15) translateY(-2px);
+  filter: drop-shadow(0 0 8px var(--accent-color-glow));
+}
+
+.socialLinks li a:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 4px;
+  border-radius: var(--radius-sm);
+}
+
+/* ── Hero image ────────────────────────────────────── */
 .heroImage {
   --hero-image-size: 300px;
 
   min-width: var(--hero-image-size);
   height: var(--hero-image-size);
   position: relative;
+  animation: scale-reveal var(--duration-xslow) ease both;
 }
 
 .heroImage img {
   object-fit: fill;
   border: var(--border-width-thick) solid var(--border-color);
   border-radius: var(--radius-image);
+  transition: box-shadow var(--duration-slow) ease;
 }
+
+.heroImage:hover img {
+  animation: glow-pulse 2s ease-in-out infinite;
+}
+
+/* ═══════════════════════════════════════════════════
+   PORTFOLIO SECTIONS
+   ═══════════════════════════════════════════════════ */
 
 .portfolioContainer {
   margin: var(--spacing-3xl) 0;
@@ -68,12 +186,67 @@
 
 .portfolioContainer h2 {
   text-align: center;
+  position: relative;
+  display: inline-block;
+  padding-bottom: var(--spacing-xs);
+  margin-bottom: var(--spacing-xl);
 }
+
+.portfolioContainer h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent-color) 0%, transparent 100%);
+  transform-origin: left;
+  transform: scaleX(0);
+  animation: accent-line-grow var(--duration-slow) ease
+    calc(var(--duration-normal) * 2) both;
+}
+
+/* ── Section divider ───────────────────────────────── */
+.sectionDivider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--border-color-hover) 20%,
+    var(--border-color-hover) 80%,
+    transparent 100%
+  );
+  margin: var(--spacing-3xl) 0 var(--spacing-xl);
+}
+
+/* ═══════════════════════════════════════════════════
+   CONTACT SECTION
+   ═══════════════════════════════════════════════════ */
 
 .contactSection {
   background-color: var(--background-alternate-color);
   padding: var(--spacing-md);
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  position: relative;
+  overflow: hidden;
+}
+
+.contactSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--accent-color) 50%,
+    transparent 100%
+  );
+  opacity: 0.6;
 }
 
 .contactSection h2 {
@@ -84,7 +257,38 @@
 .contactSection p {
   text-align: center;
   margin-bottom: var(--spacing-xl);
+  color: var(--foreground-alternate-color);
 }
+
+/* ═══════════════════════════════════════════════════
+   REDUCED MOTION
+   ═══════════════════════════════════════════════════ */
+
+@media (prefers-reduced-motion: reduce) {
+  .header,
+  .heroName,
+  .heroTagline,
+  .socialLinks,
+  .heroImage,
+  .portfolioContainer h2::after {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .socialLinks li a {
+    transition: none;
+  }
+
+  .heroImage img {
+    animation: none;
+    transition: none;
+  }
+}
+
+/* ═══════════════════════════════════════════════════
+   RESPONSIVE — 768px+
+   ═══════════════════════════════════════════════════ */
 
 @media (width >= 768px) {
   .hero {
@@ -94,7 +298,7 @@
     gap: var(--spacing-3xl);
   }
 
-  .hero ul {
+  .socialLinks {
     display: flex;
     gap: var(--spacing-sm);
   }
@@ -120,6 +324,10 @@
   }
 }
 
+/* ═══════════════════════════════════════════════════
+   RESPONSIVE — 992px+
+   ═══════════════════════════════════════════════════ */
+
 @media (width >= 992px) {
   .header {
     height: calc(var(--spacing-3xl) + var(--spacing-md));
@@ -144,15 +352,19 @@
     width: 31rem;
   }
 
-  .hero h2 {
+  .heroTagline {
     font-size: var(--font-size-2xl);
+  }
+
+  .heroName {
+    font-size: var(--font-size-xl);
   }
 
   .hero p {
     font-size: var(--font-size-xl);
   }
 
-  .hero ul {
+  .socialLinks {
     gap: var(--spacing-lg);
   }
 
@@ -165,6 +377,10 @@
   }
 }
 
+/* ═══════════════════════════════════════════════════
+   RESPONSIVE — 1400px+
+   ═══════════════════════════════════════════════════ */
+
 @media (width >= 1400px) {
   .main {
     padding: 0 var(--spacing-4xl);
@@ -172,6 +388,10 @@
 
   .hero {
     justify-content: space-evenly;
+  }
+
+  .heroTagline {
+    font-size: var(--font-size-3xl);
   }
 
   .heroImage {

@@ -1,5 +1,156 @@
+/* ═══════════════════════════════════════════════════
+   KEYFRAMES
+   ═══════════════════════════════════════════════════ */
+
+@keyframes card-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* ═══════════════════════════════════════════════════
+   CARD STRUCTURE
+   ═══════════════════════════════════════════════════ */
+
+/* ── Card wrapper ─────────────────────────────────── */
+
+.card {
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+  transition:
+    border-color var(--duration-normal) ease,
+    box-shadow var(--duration-normal) ease,
+    transform var(--duration-normal) ease;
+  animation: card-reveal linear both;
+  animation-timeline: view();
+  animation-range: entry 5% entry 35%;
+}
+
+.card:hover {
+  border-color: var(--accent-color-muted);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+}
+
+/* ── Link ────────────────────────────────────────── */
+
+.cardLink {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ── Image wrapper ────────────────────────────────── */
+
+.cardMedia {
+  position: relative;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.cardMedia::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 40%, rgb(4 22 25 / 75%) 100%);
+  opacity: 0;
+  transition: opacity var(--duration-normal) ease;
+}
+
+.card:hover .cardMedia::after {
+  opacity: 1;
+}
+
+.cardMedia img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform var(--duration-slow) ease;
+}
+
+.card:hover .cardMedia img {
+  transform: scale(1.04);
+}
+
+.cardMedia::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: var(--accent-color);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform var(--duration-normal) ease;
+  z-index: 1;
+}
+
+.card:hover .cardMedia::before {
+  transform: scaleY(1);
+}
+
+/* ── Text block ───────────────────────────────────── */
+
 .portfolioCard {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-xs);
+  padding: var(--spacing-sm) var(--spacing-md) var(--spacing-md);
+  border-top: 1px solid var(--border-color);
+  transition: border-color var(--duration-normal) ease;
+}
+
+.card:hover .portfolioCard {
+  border-color: var(--border-color-hover);
+}
+
+.portfolioCard h3 {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--foreground-color);
+  transition: color var(--duration-normal) ease;
+}
+
+.card:hover .portfolioCard h3 {
+  color: var(--accent-color);
+}
+
+.portfolioCard p {
+  font-size: var(--font-size-xs);
+  color: var(--foreground-alternate-color);
+  line-height: 1.5;
+}
+
+/* ═══════════════════════════════════════════════════
+   REDUCED MOTION
+   ═══════════════════════════════════════════════════ */
+
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    animation: none;
+    opacity: 1;
+    transform: none;
+    transition:
+      border-color var(--duration-fast) ease,
+      box-shadow var(--duration-fast) ease;
+  }
+
+  .card:hover {
+    transform: none;
+  }
+
+  .cardMedia img,
+  .cardMedia::before,
+  .cardMedia::after {
+    transition: none;
+    transform: none;
+  }
 }

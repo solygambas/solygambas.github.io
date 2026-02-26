@@ -1,13 +1,25 @@
 :root {
+  /* ── Color tokens ─────────────────────────────────── */
   --foreground-color: #e8f2f0;
   --foreground-alternate-color: #a9c2bc;
   --background-color: #041619;
   --background-alternate-color: #0b2625;
   --border-color: rgb(255 255 255 / 5%);
+  --border-color-hover: rgb(255 255 255 / 12%);
+
+  /* Accent – bright teal that complements the dark palette */
+  --accent-color: #5fcfcb;
+  --accent-color-muted: rgb(95 207 203 / 12%);
+  --accent-color-glow: rgb(95 207 203 / 25%);
+
+  /* ── Border & radius ──────────────────────────────── */
   --border-width-thin: 1px;
   --border-width-thick: 5px;
   --radius-sm: 4px;
+  --radius-md: 8px;
   --radius-image: 90px;
+
+  /* ── Spacing ──────────────────────────────────────── */
   --spacing-2xs: 0.25rem;
   --spacing-xs: 0.5rem;
   --spacing-sm: 0.75rem;
@@ -17,13 +29,28 @@
   --spacing-2xl: 3rem;
   --spacing-3xl: 4rem;
   --spacing-4xl: 6rem;
+
+  /* ── Typography ───────────────────────────────────── */
   --font-size-xs: 0.875rem;
   --font-size-sm: 1rem;
   --font-size-lg: 1.5rem;
   --font-size-xl: 2rem;
   --font-size-2xl: 2.5rem;
+  --font-size-3xl: 3.25rem;
   --content-max-width: 730px;
   --content-max-width-narrow: 600px;
+
+  /* ── Animation duration tokens ────────────────────── */
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --duration-slow: 500ms;
+  --duration-xslow: 800ms;
+
+  /* ── Shadow depth scale ───────────────────────────── */
+  --shadow-sm: 0 2px 8px rgb(0 0 0 / 30%);
+  --shadow-md: 0 4px 24px rgb(0 0 0 / 45%);
+  --shadow-lg: 0 8px 48px rgb(0 0 0 / 55%);
+  --shadow-glow: 0 0 24px var(--accent-color-glow);
 }
 
 * {

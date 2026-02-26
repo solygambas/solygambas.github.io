@@ -1,3 +1,7 @@
+/* ═══════════════════════════════════════════════════
+   BASE STYLES
+   ═══════════════════════════════════════════════════ */
+
 .button {
   background-color: var(--background-alternate-color);
   border: none;
@@ -13,14 +17,29 @@
   text-align: center;
   text-decoration: none;
   transition:
-    transform 0.15s ease,
-    box-shadow 0.15s ease;
+    transform var(--duration-fast) ease,
+    box-shadow var(--duration-normal) ease,
+    border-color var(--duration-normal) ease;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+
+.button:active {
+  transform: translateY(0);
+  box-shadow: none;
 }
 
 .button:focus-visible {
-  outline: 2px solid var(--foreground-alternate-color);
+  outline: 2px solid var(--accent-color);
   outline-offset: 2px;
 }
+
+/* ═══════════════════════════════════════════════════
+   VARIANTS
+   ═══════════════════════════════════════════════════ */
 
 .back {
   margin-block: var(--spacing-2xl);
@@ -31,13 +50,27 @@
   border: var(--border-width-thin) solid var(--border-color);
 }
 
+.submit:hover {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px var(--accent-color-muted);
+}
+
 .language {
   font-size: var(--font-size-xs);
   padding: var(--spacing-2xs) var(--spacing-xs);
 }
 
+/* ═══════════════════════════════════════════════════
+   REDUCED MOTION
+   ═══════════════════════════════════════════════════ */
+
 @media (prefers-reduced-motion: reduce) {
   .button {
     transition: none;
+  }
+
+  .button:hover {
+    transform: none;
+    box-shadow: none;
   }
 }

@@ -1,11 +1,20 @@
+/* ═══════════════════════════════════════════════════
+   FOOTER LAYOUT
+   ═══════════════════════════════════════════════════ */
+
 .footer {
   text-align: center;
   margin: var(--spacing-xl);
+  padding-top: var(--spacing-xl);
+  border-top: 1px solid var(--border-color);
+  color: var(--foreground-alternate-color);
+  font-size: var(--font-size-xs);
 }
 
 .footer span {
   display: block;
   margin-bottom: var(--spacing-xs);
+  letter-spacing: 0.03em;
 }
 
 .footer nav {
@@ -13,6 +22,35 @@
   justify-content: center;
   gap: var(--spacing-xs);
 }
+
+.footer nav a,
+.footer nav button {
+  transition:
+    color var(--duration-normal) ease,
+    opacity var(--duration-normal) ease;
+  opacity: 0.75;
+}
+
+.footer nav a:hover,
+.footer nav button:hover {
+  opacity: 1;
+  color: var(--accent-color);
+}
+
+/* ═══════════════════════════════════════════════════
+   REDUCED MOTION
+   ═══════════════════════════════════════════════════ */
+
+@media (prefers-reduced-motion: reduce) {
+  .footer nav a,
+  .footer nav button {
+    transition: none;
+  }
+}
+
+/* ═══════════════════════════════════════════════════
+   RESPONSIVE — 768px+
+   ═══════════════════════════════════════════════════ */
 
 @media (width >= 768px) {
   .footer span {
