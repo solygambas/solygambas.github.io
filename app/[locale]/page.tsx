@@ -110,6 +110,8 @@ export default async function HomePage({
           </div>
         </section>
 
+        <div className={styles.sectionDivider} />
+
         {/* Project section */}
         <section className={styles.portfolioContainer}>
           <h2>{t("featuredProjects.title")}</h2>

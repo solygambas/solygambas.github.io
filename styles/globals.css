@@ -33,6 +33,7 @@
   /* ── Typography ───────────────────────────────────── */
   --font-size-xs: 0.875rem;
   --font-size-sm: 1rem;
+  --font-size-md: 1.25rem;
   --font-size-lg: 1.5rem;
   --font-size-xl: 2rem;
   --font-size-2xl: 2.5rem;
@@ -68,6 +69,7 @@ body {
 body {
   color: var(--foreground-color);
   background: var(--background-color);
+  line-height: 1.5;
 }
 
 a {

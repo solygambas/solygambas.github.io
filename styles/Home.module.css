@@ -111,7 +111,7 @@
   );
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-sm);
   font-weight: 600;
   letter-spacing: 0.03em;
   margin-bottom: var(--spacing-xs);
@@ -172,7 +172,7 @@
 }
 
 .heroImage:hover img {
-  animation: glow-pulse 2s ease-in-out infinite;
+  animation: glow-pulse 2s ease-in-out 3;
 }
 
 /* ═══════════════════════════════════════════════════
@@ -188,6 +188,7 @@
   text-align: center;
   position: relative;
   display: inline-block;
+  font-size: var(--font-size-xl);
   padding-bottom: var(--spacing-xs);
   margin-bottom: var(--spacing-xl);
 }
@@ -226,7 +227,7 @@
 
 .contactSection {
   background-color: var(--background-alternate-color);
-  padding: var(--spacing-md);
+  padding: var(--spacing-xl);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-lg);
   position: relative;
@@ -309,6 +310,10 @@
 
   .portfolioContainer h2 {
     text-align: left;
+  }
+
+  .portfolioContainer h2::after {
+    transform-origin: left;
   }
 
   .portfolioContainerGrid {

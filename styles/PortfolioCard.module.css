@@ -72,6 +72,8 @@
   display: block;
   width: 100%;
   height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
   transition: transform var(--duration-slow) ease;
 }
 
@@ -113,7 +115,7 @@
 }
 
 .portfolioCard h3 {
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-md);
   font-weight: 600;
   color: var(--foreground-color);
   transition: color var(--duration-normal) ease;
