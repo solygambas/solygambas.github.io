@@ -69,7 +69,7 @@ body {
 body {
   color: var(--foreground-color);
   background: var(--background-color);
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 a {

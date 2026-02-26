@@ -128,7 +128,6 @@
 .portfolioCard p {
   font-size: var(--font-size-xs);
   color: var(--foreground-alternate-color);
-  line-height: 1.5;
 }
 
 /* ═══════════════════════════════════════════════════

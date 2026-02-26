@@ -11,10 +11,6 @@
   padding: 0 var(--spacing-md);
 }
 
-.portfolioItem p {
-  line-height: 1.6;
-}
-
 .portfolioItem p a {
   font-weight: 600;
   text-decoration: underline;

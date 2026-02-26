@@ -53,7 +53,7 @@
 .formGroup textarea {
   resize: vertical;
   min-height: 7rem;
-  line-height: 1.6;
+  line-height: inherit;
 }
 
 /* ═══════════════════════════════════════════════════
