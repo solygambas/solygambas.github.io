@@ -358,7 +358,10 @@
   }
 
   .heroTagline {
+    --hero-lh: 1.3;
+
     font-size: var(--font-size-2xl);
+    line-height: var(--hero-lh);
   }
 
   .heroName {
@@ -396,6 +399,8 @@
   }
 
   .heroTagline {
+    --hero-lh: 1.15;
+
     font-size: var(--font-size-3xl);
   }
 
