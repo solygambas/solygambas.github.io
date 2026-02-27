@@ -6,8 +6,6 @@
   --background-alternate-color: #0b2625;
   --border-color: rgb(255 255 255 / 5%);
   --border-color-hover: rgb(255 255 255 / 12%);
-
-  /* Accent – bright teal that complements the dark palette */
   --accent-color: #5fcfcb;
   --accent-color-muted: rgb(95 207 203 / 12%);
   --accent-color-glow: rgb(95 207 203 / 25%);
