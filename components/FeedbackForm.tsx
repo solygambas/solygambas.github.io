@@ -25,9 +25,7 @@ function FeedbackFrom() {
         <label htmlFor="message">{t("contact.message")}</label>
         <textarea id="message" name="message" rows={4} required></textarea>
       </div>
-      <Button variant="submit" type="submit">
-        {t("contact.submit")}
-      </Button>
+      <Button type="submit">{t("contact.submit")}</Button>
     </form>
   );
 }

@@ -3,8 +3,8 @@
    ═══════════════════════════════════════════════════ */
 
 .button {
-  background-color: var(--background-alternate-color);
-  border: none;
+  background-color: var(--background-color);
+  border: var(--border-width-thin) solid var(--border-color);
   border-radius: var(--radius-sm);
   color: var(--foreground-color);
   cursor: pointer;
@@ -13,6 +13,7 @@
   justify-content: center;
   font-family: inherit;
   font-size: var(--font-size-sm);
+  line-height: 1;
   padding: var(--spacing-md) var(--spacing-lg);
   text-align: center;
   text-decoration: none;
@@ -24,7 +25,8 @@
 
 .button:hover {
   transform: translateY(-1px);
-  box-shadow: var(--shadow-sm);
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px var(--accent-color-muted);
 }
 
 .button:active {
@@ -41,18 +43,14 @@
    VARIANTS
    ═══════════════════════════════════════════════════ */
 
-.back {
-  margin-block: var(--spacing-2xl);
+.secondary {
+  background-color: var(--background-alternate-color);
+  border-color: transparent;
 }
 
-.submit {
-  background-color: var(--background-color);
-  border: var(--border-width-thin) solid var(--border-color);
-}
-
-.submit:hover {
-  border-color: var(--accent-color);
-  box-shadow: 0 0 0 3px var(--accent-color-muted);
+.secondary:hover {
+  border-color: transparent;
+  box-shadow: var(--shadow-sm);
 }
 
 .language {

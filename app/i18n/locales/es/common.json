@@ -95,5 +95,11 @@
     "email": "Correo electrónico",
     "message": "Mensaje",
     "submit": "Enviar"
+  },
+  "promoBanner": {
+    "subtitle": "HTML, CSS & JavaScript",
+    "title": "100 Proyectos en 100 Días",
+    "cta": "Ver la guía",
+    "imageAlt": "Persona con mochila caminando por una calle iluminada con neón de noche"
   }
 }

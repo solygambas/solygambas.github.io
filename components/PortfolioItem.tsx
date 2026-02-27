@@ -1,5 +1,6 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { useT } from "../app/i18n/client";
 import Button from "./Button";
@@ -21,6 +22,7 @@ function PortfolioItem({
   url,
 }: PortfolioItemProps) {
   const { t } = useT("common");
+  const router = useRouter();
   return (
     <div className={styles.portfolioItem}>
       <Image src={src} alt={alt} width={300} height={200} />
@@ -35,7 +37,13 @@ function PortfolioItem({
           </a>
         </p>
       )}
-      <Button variant="back">{t("backButton.text")}</Button>
+      <Button
+        variant="secondary"
+        onClick={() => router.back()}
+        className={styles.backButton}
+      >
+        {t("backButton.text")}
+      </Button>
     </div>
   );
 }

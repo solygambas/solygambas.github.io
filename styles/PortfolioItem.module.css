@@ -20,6 +20,10 @@
   color: var(--foreground-alternate-color);
 }
 
+.backButton {
+  margin-block: var(--spacing-2xl);
+}
+
 /* ═══════════════════════════════════════════════════
    RESPONSIVE — 768px+
    ═══════════════════════════════════════════════════ */

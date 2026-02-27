@@ -9,6 +9,11 @@
   --accent-color: #5fcfcb;
   --accent-color-muted: rgb(95 207 203 / 12%);
   --accent-color-glow: rgb(95 207 203 / 25%);
+  --gradient-brand: linear-gradient(
+    135deg,
+    var(--foreground-color) 0%,
+    var(--accent-color) 100%
+  );
 
   /* ── Border & radius ──────────────────────────────── */
   --border-width-thin: 1px;

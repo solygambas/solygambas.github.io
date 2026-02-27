@@ -95,5 +95,11 @@
     "email": "Email",
     "message": "Message",
     "submit": "Envoyer"
+  },
+  "promoBanner": {
+    "subtitle": "HTML, CSS & JavaScript",
+    "title": "100 Projets en 100 Jours",
+    "cta": "Voir le guide",
+    "imageAlt": "Personne avec un sac à dos marchant dans une rue éclairée au néon la nuit"
   }
 }

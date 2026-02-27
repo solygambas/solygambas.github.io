@@ -95,5 +95,11 @@
     "email": "Email",
     "message": "Messaggio",
     "submit": "Invia"
+  },
+  "promoBanner": {
+    "subtitle": "HTML, CSS & JavaScript",
+    "title": "100 Progetti in 100 Giorni",
+    "cta": "Vedi la guida",
+    "imageAlt": "Persona con zaino che cammina in una strada illuminata al neon di notte"
   }
 }

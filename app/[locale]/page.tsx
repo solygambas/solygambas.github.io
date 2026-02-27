@@ -6,6 +6,8 @@ import type { Locale } from "../i18n/settings";
 import SocialMediaIcon from "../../components/SocialMediaIcon";
 import PortfolioCard from "../../components/PortfolioCard";
 import FeedbackForm from "../../components/FeedbackForm";
+import Card from "../../components/Card";
+import PromoBanner from "../../components/PromoBanner";
 import type { Metadata } from "next";
 
 export async function generateMetadata({
@@ -82,6 +84,8 @@ export default async function HomePage({
           </div>
         </section>
 
+        <PromoBanner locale={locale} />
+
         <section className={styles.portfolioContainer}>
           <h2>{t("caseStudies.title")}</h2>
           <div className={styles.portfolioContainerGrid}>
@@ -138,11 +142,11 @@ export default async function HomePage({
         </section>
 
         {/* Contact section */}
-        <section className={styles.contactSection}>
+        <Card className={styles.contactSection}>
           <h2>{t("contact.title")}</h2>
           <p>{t("contact.description")}</p>
           <FeedbackForm />
-        </section>
+        </Card>
       </div>
       <Footer />
     </div>

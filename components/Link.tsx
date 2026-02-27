@@ -9,6 +9,7 @@ interface LinkComponentProps {
   skipLocaleHandling?: boolean;
   href?: string;
   locale?: string;
+  className?: string;
 }
 
 const LinkComponent = ({
@@ -26,7 +27,11 @@ const LinkComponent = ({
     href = href ? `/${locale}${href}` : (pathname ?? "");
   }
 
-  return <Link href={href}>{children}</Link>;
+  return (
+    <Link href={href} className={rest.className}>
+      {children}
+    </Link>
+  );
 };
 
 export default LinkComponent;

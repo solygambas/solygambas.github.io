@@ -1,0 +1,28 @@
+/* ═══════════════════════════════════════════════════
+   CARD SURFACE
+   ═══════════════════════════════════════════════════ */
+
+.card {
+  background-color: var(--background-alternate-color);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  padding: var(--spacing-xl);
+  position: relative;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--accent-color) 50%,
+    transparent 100%
+  );
+  opacity: 0.6;
+}

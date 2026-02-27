@@ -95,5 +95,11 @@
     "email": "Email",
     "message": "Message",
     "submit": "Send"
+  },
+  "promoBanner": {
+    "subtitle": "HTML, CSS & JavaScript",
+    "title": "100 Projects in 100 Days",
+    "cta": "Preview the guide",
+    "imageAlt": "Person with backpack walking down neon-lit street at night"
   }
 }

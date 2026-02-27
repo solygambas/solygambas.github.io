@@ -1,0 +1,30 @@
+/* ═══════════════════════════════════════════════════
+   COVER IMAGE
+   ═══════════════════════════════════════════════════ */
+
+.wrap {
+  border: var(--border-width-thick) solid var(--border-color);
+  border-radius: var(--radius-md);
+  display: block;
+  flex-shrink: 0;
+  height: 160px;
+  line-height: 0;
+  overflow: hidden;
+  transition: box-shadow var(--duration-slow) ease;
+  width: 160px;
+}
+
+.wrap img {
+  display: block;
+  object-fit: cover;
+}
+
+.wrap:hover {
+  box-shadow: var(--shadow-glow);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wrap {
+    transition: none;
+  }
+}

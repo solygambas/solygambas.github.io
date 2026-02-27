@@ -1,10 +1,10 @@
 "use client";
 
-import { useRouter } from "next/navigation";
 import type { MouseEventHandler, ReactNode } from "react";
+import LinkComponent from "./Link";
 import styles from "../styles/Button.module.css";
 
-type ButtonVariant = "default" | "back" | "submit" | "language";
+type ButtonVariant = "default" | "secondary" | "language";
 
 type ButtonType = "button" | "submit" | "reset";
 
@@ -15,6 +15,7 @@ interface ButtonProps {
   disabled?: boolean;
   className?: string;
   variant?: ButtonVariant;
+  href?: string;
 }
 
 const Button = ({
@@ -24,25 +25,29 @@ const Button = ({
   disabled = false,
   className = "",
   variant = "default",
+  href,
 }: ButtonProps) => {
-  const router = useRouter();
-  const handleClick =
-    onClick ?? (variant === "back" ? () => router.back() : undefined);
-
   const buttonClassName = [
     styles.button,
-    variant === "back" ? styles.back : "",
-    variant === "submit" ? styles.submit : "",
+    variant === "secondary" ? styles.secondary : "",
     variant === "language" ? styles.language : "",
     className,
   ]
     .filter(Boolean)
     .join(" ");
 
+  if (href !== undefined) {
+    return (
+      <LinkComponent href={href} className={buttonClassName}>
+        {children}
+      </LinkComponent>
+    );
+  }
+
   return (
     <button
       type={type}
-      onClick={handleClick}
+      onClick={onClick}
       disabled={disabled}
       className={buttonClassName}
     >

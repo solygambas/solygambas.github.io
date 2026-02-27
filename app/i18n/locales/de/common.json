@@ -95,5 +95,11 @@
     "email": "E-Mail",
     "message": "Nachricht",
     "submit": "Senden"
+  },
+  "promoBanner": {
+    "subtitle": "HTML, CSS & JavaScript",
+    "title": "100 Projekte in 100 Tagen",
+    "cta": "Leitfaden ansehen",
+    "imageAlt": "Person mit Rucksack geht nachts durch eine neonbeleuchtete Straße"
   }
 }

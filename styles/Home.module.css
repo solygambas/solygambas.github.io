@@ -104,11 +104,7 @@
 .heroName {
   animation: slide-up var(--duration-slow) ease calc(var(--duration-fast) * 1)
     both;
-  background: linear-gradient(
-    135deg,
-    var(--foreground-color) 0%,
-    var(--accent-color) 100%
-  );
+  background: var(--gradient-brand);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: var(--font-size-sm);
@@ -225,31 +221,6 @@
    CONTACT SECTION
    ═══════════════════════════════════════════════════ */
 
-.contactSection {
-  background-color: var(--background-alternate-color);
-  padding: var(--spacing-xl);
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-lg);
-  position: relative;
-  overflow: hidden;
-}
-
-.contactSection::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: linear-gradient(
-    90deg,
-    transparent 0%,
-    var(--accent-color) 50%,
-    transparent 100%
-  );
-  opacity: 0.6;
-}
-
 .contactSection h2 {
   text-align: center;
   margin-bottom: var(--spacing-md);
@@ -323,7 +294,6 @@
   }
 
   .contactSection {
-    padding: var(--spacing-xl);
     margin: var(--spacing-3xl) 0;
     border: var(--border-width-thick) solid var(--border-color);
   }
