@@ -83,7 +83,7 @@
 
 /* ── Main ──────────────────────────────────────────── */
 .main {
-  padding: 0 var(--spacing-xl);
+  padding: 0 var(--spacing-md);
 }
 
 /* ═══════════════════════════════════════════════════
@@ -171,6 +171,10 @@
   animation: glow-pulse 2s ease-in-out 3;
 }
 
+.heroText {
+  width: 100%;
+}
+
 /* ═══════════════════════════════════════════════════
    PORTFOLIO SECTIONS
    ═══════════════════════════════════════════════════ */
@@ -184,7 +188,7 @@
   text-align: center;
   position: relative;
   display: inline-block;
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-lg);
   padding-bottom: var(--spacing-xs);
   margin-bottom: var(--spacing-xl);
 }
@@ -233,28 +237,16 @@
 }
 
 /* ═══════════════════════════════════════════════════
-   REDUCED MOTION
+   RESPONSIVE — 480px+
    ═══════════════════════════════════════════════════ */
 
-@media (prefers-reduced-motion: reduce) {
-  .header,
-  .heroName,
-  .heroTagline,
-  .socialLinks,
-  .heroImage,
-  .portfolioContainer h2::after {
-    animation: none;
-    opacity: 1;
-    transform: none;
+@media (width >= 480px) {
+  .main {
+    padding: 0 var(--spacing-xl);
   }
 
-  .socialLinks li a {
-    transition: none;
-  }
-
-  .heroImage img {
-    animation: none;
-    transition: none;
+  .portfolioContainer h2 {
+    font-size: var(--font-size-xl);
   }
 }
 
@@ -268,6 +260,8 @@
     flex-direction: row;
     justify-content: space-evenly;
     gap: var(--spacing-3xl);
+    padding-top: var(--spacing-xl);
+    padding-bottom: var(--spacing-xl);
   }
 
   .socialLinks {
@@ -321,6 +315,8 @@
   .hero {
     justify-content: space-between;
     gap: var(--spacing-md);
+    padding-top: var(--spacing-2xl);
+    padding-bottom: var(--spacing-2xl);
   }
 
   .heroText {
@@ -366,6 +362,8 @@
 
   .hero {
     justify-content: space-evenly;
+    padding-top: var(--spacing-3xl);
+    padding-bottom: var(--spacing-3xl);
   }
 
   .heroTagline {
@@ -376,5 +374,31 @@
 
   .heroImage {
     --hero-image-size: 644px;
+  }
+}
+
+/* ═══════════════════════════════════════════════════
+   REDUCED MOTION
+   ═══════════════════════════════════════════════════ */
+
+@media (prefers-reduced-motion: reduce) {
+  .header,
+  .heroName,
+  .heroTagline,
+  .socialLinks,
+  .heroImage,
+  .portfolioContainer h2::after {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .socialLinks li a {
+    transition: none;
+  }
+
+  .heroImage img {
+    animation: none;
+    transition: none;
   }
 }
