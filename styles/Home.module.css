@@ -123,7 +123,7 @@
 .socialLinks {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(4, minmax(75px, 1fr));
+  grid-template-columns: repeat(4, minmax(40px, 1fr));
   justify-items: center;
   margin-top: var(--spacing-lg);
   gap: var(--spacing-lg);
@@ -169,6 +169,10 @@
 
 .heroImage:hover img {
   animation: glow-pulse 2s ease-in-out 3;
+}
+
+.heroText {
+  max-width: 100%;
 }
 
 /* ═══════════════════════════════════════════════════
