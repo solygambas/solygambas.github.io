@@ -6,8 +6,9 @@ import "../styles/globals.css";
 const font = Radio_Canada({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "Developer portfolio showcasing projects and case studies",
+  title: "Solygambas",
+  description:
+    "Remote Full-stack Developer: Node.js, React, React Native, JavaScript, WordPress, PHP, Python. Let's create together!",
 };
 
 export default function RootLayout({
