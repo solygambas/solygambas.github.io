@@ -28,7 +28,7 @@ export function generateStaticParams() {
     Object.keys(caseStudyKeys).map((caseStudy) => ({
       locale,
       caseStudy,
-    }))
+    })),
   );
 }
 

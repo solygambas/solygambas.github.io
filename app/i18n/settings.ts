@@ -6,7 +6,7 @@ export type Locale = (typeof locales)[number];
 
 export function getOptions(
   lng: string = fallbackLng,
-  ns: string | string[] = defaultNS
+  ns: string | string[] = defaultNS,
 ) {
   return {
     // debug: process.env.NODE_ENV === "development",

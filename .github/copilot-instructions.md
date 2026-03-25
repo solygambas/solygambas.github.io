@@ -63,7 +63,7 @@ export const dynamicParams = false;
 
 export function generateStaticParams() {
   return locales.flatMap((locale) =>
-    Object.keys(contentKeys).map((key) => ({ locale, key }))
+    Object.keys(contentKeys).map((key) => ({ locale, key })),
   );
 }
 ```

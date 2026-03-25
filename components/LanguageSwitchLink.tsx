@@ -17,7 +17,7 @@ const LanguageSwitchLink = ({ locale, href }: LanguageSwitchLinkProps) => {
   const currentLocale = params?.locale as string;
   const newPathname = (pathname ?? "").replace(
     `/${currentLocale}`,
-    `/${locale}`
+    `/${locale}`,
   );
   const link = href ? `/${locale}${href}` : newPathname;
 

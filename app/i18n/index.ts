@@ -10,8 +10,8 @@ const initI18next = async (lng: Locale, ns: string | string[]) => {
     .use(
       resourcesToBackend(
         (language: string, namespace: string) =>
-          import(`./locales/${language}/${namespace}.json`)
-      )
+          import(`./locales/${language}/${namespace}.json`),
+      ),
     )
     .init(getOptions(lng, ns));
   return i18nInstance;
@@ -19,7 +19,7 @@ const initI18next = async (lng: Locale, ns: string | string[]) => {
 
 export async function getT(
   lng: Locale,
-  ns: string | string[] = "common"
+  ns: string | string[] = "common",
 ): Promise<ReturnType<I18nInstance["getFixedT"]>> {
   const i18nextInstance = await initI18next(lng, ns);
   return i18nextInstance.getFixedT(lng, Array.isArray(ns) ? ns[0] : ns);

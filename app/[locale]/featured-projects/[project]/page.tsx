@@ -28,7 +28,7 @@ export function generateStaticParams() {
     Object.keys(featuredProjectKeys).map((project) => ({
       locale,
       project,
-    }))
+    })),
   );
 }
 

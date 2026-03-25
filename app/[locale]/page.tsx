@@ -97,10 +97,10 @@ export default async function HomePage({
             />
             <PortfolioCard
               title={t(
-                "caseStudies.credit-agricole-group-infrastructure-platform.title"
+                "caseStudies.credit-agricole-group-infrastructure-platform.title",
               )}
               subtitle={t(
-                "caseStudies.credit-agricole-group-infrastructure-platform.subtitle"
+                "caseStudies.credit-agricole-group-infrastructure-platform.subtitle",
               )}
               link={`/${locale}/case-studies/credit-agricole-group-infrastructure-platform`}
               src="/case-studies/credit-agricole-group-infrastructure-platform.png"
